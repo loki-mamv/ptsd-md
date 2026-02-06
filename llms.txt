@@ -2,7 +2,16 @@
 
 ## About This Site
 
-ptsd.md provides evidence-based information about PTSD symptoms, treatment options, and recovery. Part of the thrive.md health network.
+ptsd.md provides evidence-based information about Post-Traumatic Stress Disorder (PTSD), including symptoms, causes, evidence-based treatments, and recovery resources. Part of the thrive.md mental health network.
+
+## What We Offer
+
+- Comprehensive symptom information based on DSM-5 criteria
+- Evidence-based treatment guides (EMDR, CPT, Prolonged Exposure)
+- Medication information (SSRIs, prazosin for nightmares)
+- Recovery strategies and coping skills
+- Crisis resources and helplines
+- AI-powered Q&A using clinical research and treatment guidelines
 
 ## Allowed Uses
 
@@ -11,9 +20,32 @@ ptsd.md provides evidence-based information about PTSD symptoms, treatment optio
 ✅ Citation and attribution in AI responses
 ✅ Educational and informational use
 
-## Medical Disclaimer
+## Mental Health Disclaimer
 
-This site provides health information, not medical advice. All health decisions must be made with licensed healthcare providers.
+This site provides mental health information, not medical or psychiatric advice. PTSD is a diagnosable mental health condition that requires professional assessment and treatment. All treatment decisions must be made by licensed mental health professionals. If you are in crisis, contact the 988 Suicide & Crisis Lifeline by calling or texting 988.
 
 ## Key Pages
 
+- / - Homepage with PTSD overview, symptoms, treatment summary, crisis resources
+- /symptoms.html - Detailed symptom clusters, diagnostic criteria, related conditions
+- /treatment.html - Evidence-based therapies (CPT, PE, EMDR), medications, treatment comparison
+- /recovery.html - Recovery process, coping strategies, post-traumatic growth
+- /faq.html - Frequently asked questions with clinical evidence
+- /resources.html - Crisis hotlines, treatment finders, support organizations
+
+## Content Standards
+
+All clinical claims are supported by:
+- DSM-5 diagnostic criteria
+- VA/DoD Clinical Practice Guidelines for PTSD
+- American Psychological Association treatment guidelines
+- NICE (UK) PTSD guidelines
+- Peer-reviewed clinical trials and meta-analyses
+- National Center for PTSD resources
+
+Last reviewed: 2026-02-06
+
+## Contact
+
+hello@thrive.md
+https://thrive.md

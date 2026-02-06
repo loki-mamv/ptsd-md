@@ -2,73 +2,247 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="ai-content" content="allowed">
-    <meta name="ai-training" content="allowed">
-    <meta name="ai-topic" content="PTSD, trauma, mental health, therapy">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PTSD Treatment Options — Evidence-Based Therapies | ptsd.md</title>
-    <meta name="description" content="Effective PTSD treatments: Prolonged Exposure, CPT, EMDR, and medications. What works, what to expect, and how to find help.">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@thraborivemd">
-    <meta name="twitter:title" content="PTSD Guide">
-    <meta name="twitter:description" content="Evidence-based health information from ptsd.md">
+    <title>PTSD Treatment — EMDR, CPT, Prolonged Exposure & Medications</title>
+    <meta name="description" content="Evidence-based PTSD treatments including EMDR, Cognitive Processing Therapy, Prolonged Exposure, and FDA-approved medications. Learn how each therapy works and what to expect.">
     <link rel="canonical" href="https://ptsd.md/treatment.html">
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext x='16' y='24' font-family='-apple-system,system-ui,sans-serif' font-weight='800' font-size='16' fill='%2306b6d4' text-anchor='middle'%3E.md%3C/text%3E%3C/svg%3E">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext x='16' y='24' font-family='-apple-system,system-ui,sans-serif' font-weight='800' font-size='16' fill='%230d9488' text-anchor='middle' letter-spacing='-0.5'%3E.md%3C/text%3E%3C/svg%3E">
     <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <style>
         :root {
             --bg-primary: #ffffff;
             --bg-secondary: #f8fafc;
+            --bg-tertiary: #f1f5f9;
             --text-primary: #0f172a;
             --text-secondary: #475569;
             --text-muted: #94a3b8;
-            --accent: #06b6d4;
-            --accent-dark: #0891b2;
-            --accent-light: #cffafe;
+            --accent: #0d9488;
+            --accent-dark: #0f766e;
+            --accent-light: #ccfbf1;
             --border: #e2e8f0;
             --font-display: 'Source Serif 4', Georgia, serif;
             --font-body: 'Inter', -apple-system, sans-serif;
         }
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: var(--font-body); background: var(--bg-primary); color: var(--text-primary); line-height: 1.8; font-size: 17px; }
-        
-        header { background: var(--bg-primary); border-bottom: 1px solid var(--border); padding: 16px 24px; position: sticky; top: 0; z-index: 100; }
-        .header-inner { max-width: 800px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
-        .logo { font-family: var(--font-display); font-size: 22px; font-weight: 600; color: var(--text-primary); text-decoration: none; }
+        body {
+            font-family: var(--font-body);
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            font-size: 16px;
+        }
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border);
+        }
+        .header-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 16px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-family: var(--font-display);
+            font-size: 22px;
+            font-weight: 600;
+            color: var(--text-primary);
+            text-decoration: none;
+        }
         .logo span { color: var(--accent); }
-        nav a { color: var(--text-secondary); text-decoration: none; margin-left: 24px; font-size: 15px; }
+        nav { display: flex; gap: 32px; }
+        nav a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
         nav a:hover { color: var(--accent); }
-        
-        article { max-width: 700px; margin: 0 auto; padding: 60px 24px 80px; }
-        .breadcrumb { font-size: 14px; color: var(--text-muted); margin-bottom: 16px; }
-        .breadcrumb a { color: var(--accent); text-decoration: none; }
-        h1 { font-family: var(--font-display); font-size: clamp(32px, 5vw, 42px); font-weight: 700; line-height: 1.2; margin-bottom: 16px; }
-        .article-meta { font-size: 14px; color: var(--text-muted); margin-bottom: 24px; }
-        .article-intro { font-size: 19px; color: var(--text-secondary); padding-bottom: 32px; border-bottom: 1px solid var(--border); margin-bottom: 32px; }
-        
-        h2 { font-family: var(--font-display); font-size: 28px; font-weight: 600; margin: 48px 0 20px; }
-        h3 { font-family: var(--font-display); font-size: 22px; font-weight: 600; margin: 36px 0 16px; }
-        p { margin-bottom: 20px; }
-        ul, ol { margin: 0 0 20px 24px; }
-        li { margin-bottom: 10px; }
-        
-        .treatment-detail { background: var(--bg-secondary); border-radius: 16px; padding: 28px; margin: 32px 0; border-left: 4px solid var(--accent); }
-        .treatment-detail h3 { margin-top: 0; }
-        .treatment-detail .evidence { display: inline-block; font-size: 12px; font-weight: 600; color: white; background: var(--accent); padding: 4px 10px; border-radius: 4px; margin-bottom: 16px; }
-        
-        .key-points { background: var(--accent-light); border-radius: 12px; padding: 24px 28px; margin: 32px 0; }
-        .key-points h4 { font-size: 16px; font-weight: 600; color: var(--accent-dark); margin-bottom: 12px; }
-        .key-points ul { margin: 0; padding-left: 20px; }
-        
-        .warning-box { background: #fef3c7; border-left: 4px solid #f59e0b; padding: 20px 24px; margin: 32px 0; border-radius: 0 8px 8px 0; }
-        .warning-box h4 { color: #92400e; margin-bottom: 8px; }
-        .warning-box p { margin: 0; color: #78350f; }
-        
-        footer { background: var(--bg-secondary); border-top: 1px solid var(--border); padding: 48px 24px; }
-        .footer-inner { max-width: 700px; margin: 0 auto; text-align: center; font-size: 14px; color: var(--text-muted); }
-        .footer-inner a { color: var(--accent); text-decoration: none; }
-        
-        @media (max-width: 768px) { nav { display: none; } }
+        main {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 120px 24px 64px;
+        }
+        .page-header {
+            margin-bottom: 48px;
+        }
+        .page-eyebrow {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+        }
+        h1 {
+            font-family: var(--font-display);
+            font-size: clamp(32px, 5vw, 42px);
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 16px;
+            color: var(--text-primary);
+        }
+        .page-subtitle {
+            font-size: 18px;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+        .section {
+            margin-bottom: 48px;
+        }
+        h2 {
+            font-family: var(--font-display);
+            font-size: 26px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            color: var(--text-primary);
+        }
+        h3 {
+            font-family: var(--font-display);
+            font-size: 19px;
+            font-weight: 600;
+            margin: 24px 0 12px;
+            color: var(--text-primary);
+        }
+        p {
+            font-size: 17px;
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+            line-height: 1.7;
+        }
+        .treatment-card {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 28px;
+            margin: 24px 0;
+        }
+        .treatment-card h3 {
+            margin-top: 0;
+            font-size: 20px;
+            color: var(--text-primary);
+        }
+        .treatment-card .meta {
+            display: flex;
+            gap: 24px;
+            margin: 12px 0 16px;
+            font-size: 14px;
+            color: var(--text-muted);
+        }
+        .treatment-card .meta span {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .treatment-card ul {
+            margin: 16px 0 0 20px;
+        }
+        .treatment-card li {
+            margin-bottom: 8px;
+            color: var(--text-secondary);
+            font-size: 15px;
+        }
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 24px 0;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .comparison-table thead {
+            background: var(--bg-secondary);
+        }
+        .comparison-table th {
+            padding: 12px 16px;
+            text-align: left;
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--text-primary);
+            border-bottom: 1px solid var(--border);
+        }
+        .comparison-table td {
+            padding: 12px 16px;
+            font-size: 14px;
+            color: var(--text-secondary);
+            border-bottom: 1px solid var(--border);
+        }
+        .comparison-table tr:last-child td {
+            border-bottom: none;
+        }
+        .info-box {
+            background: var(--accent-light);
+            border: 1px solid var(--accent);
+            border-left: 4px solid var(--accent);
+            border-radius: 8px;
+            padding: 20px;
+            margin: 24px 0;
+        }
+        .info-box h3 {
+            margin-top: 0;
+            font-size: 17px;
+            color: var(--accent-dark);
+        }
+        .info-box p {
+            color: var(--accent-dark);
+            font-size: 15px;
+            margin-bottom: 0;
+        }
+        .warning-box {
+            background: #fef2f2;
+            border: 1px solid #fecaca;
+            border-left: 4px solid #ef4444;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 24px 0;
+        }
+        .warning-box h3 {
+            color: #991b1b;
+            margin-top: 0;
+            font-size: 17px;
+        }
+        .warning-box p {
+            color: #7f1d1d;
+            font-size: 15px;
+            margin-bottom: 0;
+        }
+        ul, ol {
+            margin-left: 24px;
+            margin-bottom: 16px;
+            color: var(--text-secondary);
+            line-height: 1.8;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        footer {
+            background: var(--bg-secondary);
+            border-top: 1px solid var(--border);
+            padding: 48px 24px;
+            margin-top: 80px;
+        }
+        .footer-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 14px;
+            color: var(--text-muted);
+        }
+        @media (max-width: 768px) {
+            nav { display: none; }
+            main { padding: 100px 16px 40px; }
+            .treatment-card .meta { flex-wrap: wrap; gap: 12px; }
+            .comparison-table { font-size: 12px; }
+            .comparison-table th, .comparison-table td { padding: 8px 10px; }
+        }
     </style>
 </head>
 <body>
@@ -77,144 +251,175 @@
             <a href="/" class="logo">ptsd<span>.md</span></a>
             <nav>
                 <a href="/">Home</a>
-                <a href="/blog.html">Articles</a>
-                <a href="/resources.html">Resources</a>
+                <a href="/symptoms.html">Symptoms</a>
+                <a href="/treatment.html">Treatment</a>
+                <a href="/recovery.html">Recovery</a>
+                <a href="/faq.html">FAQ</a>
             </nav>
         </div>
     </header>
 
-    <article>
-        <div class="breadcrumb"><a href="/">Home</a> / <a href="/blog.html">Articles</a> / Treatment</div>
-        <h1>PTSD Treatment Options</h1>
-        <div class="article-meta">Updated Feb 2026 · 15 min read</div>
-        <p class="article-intro">PTSD is treatable. Research shows that most people who complete evidence-based treatment see significant improvement. Here's what works and what to expect.</p>
+    <main>
+        <div class="page-header">
+            <div class="page-eyebrow">Treatment Guide</div>
+            <h1>PTSD Treatment Options</h1>
+            <p class="page-subtitle">Evidence-based treatments for PTSD, including trauma-focused psychotherapies and FDA-approved medications. Learn how each treatment works and what to expect.</p>
+        </div>
 
-        <div class="key-points">
-            <h4>Key Takeaways</h4>
+        <div class="info-box">
+            <h3>✅ Good News: PTSD Is Treatable</h3>
+            <p>Research shows that 53-80% of people who complete evidence-based trauma therapy no longer meet criteria for PTSD. Treatment works, and recovery is possible.</p>
+        </div>
+
+        <section class="section">
+            <h2>First-Line Treatments</h2>
+            <p>The following trauma-focused psychotherapies are strongly recommended by the VA/DoD, American Psychological Association, and international guidelines as first-line treatments for PTSD.</p>
+            
+            <div class="treatment-card">
+                <h3>Cognitive Processing Therapy (CPT)</h3>
+                <div class="meta">
+                    <span>📅 12 sessions (60-90 min)</span>
+                    <span>📊 53-80% no longer have PTSD</span>
+                </div>
+                <p>CPT helps you understand and change unhelpful beliefs you developed after trauma. You'll learn to examine thoughts like "It was my fault" or "I can't trust anyone" and develop more balanced perspectives.</p>
+                <p><strong>What to expect:</strong></p>
+                <ul>
+                    <li>Learn about PTSD and how thoughts affect feelings</li>
+                    <li>Write an impact statement about how trauma affected your beliefs</li>
+                    <li>Use worksheets to identify and challenge "stuck points"</li>
+                    <li>Develop new, more balanced ways of thinking</li>
+                    <li>Write a final impact statement showing changed beliefs</li>
+                </ul>
+            </div>
+
+            <div class="treatment-card">
+                <h3>Prolonged Exposure (PE)</h3>
+                <div class="meta">
+                    <span>📅 8-15 sessions (90 min)</span>
+                    <span>📊 Strong evidence of effectiveness</span>
+                </div>
+                <p>PE helps you gradually approach trauma-related memories and situations you've been avoiding. By facing rather than avoiding, you learn that memories aren't dangerous and anxiety decreases naturally.</p>
+                <p><strong>What to expect:</strong></p>
+                <ul>
+                    <li>Learn about PTSD and how avoidance maintains it</li>
+                    <li>Practice breathing techniques for anxiety management</li>
+                    <li>In-vivo exposure: Gradually approach avoided situations in real life</li>
+                    <li>Imaginal exposure: Recount the trauma memory repeatedly in session</li>
+                    <li>Listen to session recordings at home for processing</li>
+                </ul>
+            </div>
+
+            <div class="treatment-card">
+                <h3>EMDR (Eye Movement Desensitization and Reprocessing)</h3>
+                <div class="meta">
+                    <span>📅 6-12 sessions</span>
+                    <span>📊 WHO & APA recommended</span>
+                </div>
+                <p>EMDR uses bilateral stimulation (like side-to-side eye movements) while you briefly focus on traumatic memories. This helps your brain reprocess trauma so it becomes less distressing.</p>
+                <p><strong>What to expect:</strong></p>
+                <ul>
+                    <li>History-taking and treatment planning</li>
+                    <li>Learn coping techniques for emotional distress</li>
+                    <li>Identify target memories, negative beliefs, and desired beliefs</li>
+                    <li>Process memories with bilateral stimulation (eye movements, taps, or tones)</li>
+                    <li>Install positive beliefs and check for remaining distress</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Treatment Comparison</h2>
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Treatment</th>
+                        <th>Sessions</th>
+                        <th>Approach</th>
+                        <th>Best For</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>CPT</strong></td>
+                        <td>12</td>
+                        <td>Cognitive (changing thoughts)</td>
+                        <td>Those who prefer to work with thoughts; guilt/shame prominent</td>
+                    </tr>
+                    <tr>
+                        <td><strong>PE</strong></td>
+                        <td>8-15</td>
+                        <td>Behavioral (facing fears)</td>
+                        <td>High avoidance; willing to approach feared situations</td>
+                    </tr>
+                    <tr>
+                        <td><strong>EMDR</strong></td>
+                        <td>6-12</td>
+                        <td>Memory reprocessing</td>
+                        <td>Those uncomfortable with extensive talking about trauma</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p style="font-size: 14px; color: var(--text-muted);">All three treatments are equally effective. The "best" treatment is the one you'll complete. Discuss with your therapist to find the best fit.</p>
+        </section>
+
+        <section class="section">
+            <h2>Medications for PTSD</h2>
+            <p>While trauma-focused therapy is first-line treatment, medications can help reduce symptoms, especially when combined with therapy or when therapy isn't immediately available.</p>
+
+            <h3>FDA-Approved for PTSD</h3>
             <ul>
-                <li>Trauma-focused psychotherapy is the most effective treatment</li>
-                <li>53-80% of people no longer meet PTSD criteria after completing treatment</li>
-                <li>Medications can help but work best combined with therapy</li>
-                <li>Treatment involves processing trauma, not just managing symptoms</li>
+                <li><strong>Sertraline (Zoloft)</strong> — SSRI; 50-200mg daily. Can reduce all symptom clusters.</li>
+                <li><strong>Paroxetine (Paxil)</strong> — SSRI; 20-60mg daily. Effective for core PTSD symptoms.</li>
             </ul>
-        </div>
 
-        <h2>Trauma-Focused Psychotherapies</h2>
-        <p>These are the most effective treatments. They involve directly addressing the trauma rather than just managing symptoms.</p>
-
-        <div class="treatment-detail">
-            <h3>Prolonged Exposure (PE)</h3>
-            <span class="evidence">Strongly Recommended</span>
-            <p>PE helps you gradually approach trauma-related memories, feelings, and situations you've been avoiding. Through repeated, controlled exposure, the memories lose their power to cause distress.</p>
-            <p><strong>What happens:</strong></p>
+            <h3>Other Evidence-Based Options</h3>
             <ul>
-                <li>Psychoeducation about PTSD and treatment</li>
-                <li>Breathing retraining for relaxation</li>
-                <li>In vivo exposure: Gradually facing avoided situations in real life</li>
-                <li>Imaginal exposure: Revisiting the trauma memory in session (recorded for homework)</li>
+                <li><strong>Venlafaxine (Effexor XR)</strong> — SNRI with evidence supporting use for PTSD.</li>
+                <li><strong>Prazosin</strong> — Alpha-blocker used for PTSD-related nightmares (off-label).</li>
             </ul>
-            <p><strong>Duration:</strong> Typically 8-15 sessions of 90 minutes</p>
-            <p><strong>Evidence:</strong> Decades of research. Effective for combat, sexual assault, accidents, and other trauma types.</p>
-        </div>
 
-        <div class="treatment-detail">
-            <h3>Cognitive Processing Therapy (CPT)</h3>
-            <span class="evidence">Strongly Recommended</span>
-            <p>CPT helps identify and challenge unhelpful thoughts and beliefs that developed after trauma ("stuck points"). These might include beliefs like "It was my fault," "I can never be safe," or "No one can be trusted."</p>
-            <p><strong>What happens:</strong></p>
+            <div class="warning-box">
+                <h3>⚠️ Medications to Avoid</h3>
+                <p><strong>Benzodiazepines</strong> (Xanax, Klonopin, Ativan) are NOT recommended for PTSD. Research shows they can worsen outcomes, interfere with trauma processing, and carry significant addiction risk. If you're currently taking benzodiazepines, talk to your prescriber about tapering safely—don't stop abruptly.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>What If Therapy Feels Too Hard?</h2>
+            <p>It's common to feel apprehensive about trauma-focused therapy. Here's what to know:</p>
             <ul>
-                <li>Writing an impact statement about what the trauma means to you</li>
-                <li>Learning to identify stuck points</li>
-                <li>Using worksheets to challenge and modify unhelpful beliefs</li>
-                <li>Addressing themes: safety, trust, power/control, esteem, intimacy</li>
+                <li><strong>Temporary increase in distress is normal</strong> — Symptoms may briefly worsen as you process trauma, but this typically resolves</li>
+                <li><strong>You control the pace</strong> — A good therapist will work at a pace you can handle</li>
+                <li><strong>Avoidance is understandable but keeps you stuck</strong> — Facing trauma in therapy, while hard, leads to relief</li>
+                <li><strong>Dropout is common but completers do well</strong> — Those who complete therapy have excellent outcomes</li>
             </ul>
-            <p><strong>Duration:</strong> Usually 12 sessions of 60 minutes</p>
-            <p><strong>Variations:</strong> Can be done with or without a written trauma account. Group format also effective.</p>
-        </div>
 
-        <div class="treatment-detail">
-            <h3>EMDR (Eye Movement Desensitization and Reprocessing)</h3>
-            <span class="evidence">Recommended</span>
-            <p>EMDR uses bilateral stimulation (usually eye movements, but can be taps or sounds) while processing traumatic memories. The exact mechanism isn't fully understood, but it appears to help the brain reprocess stuck memories.</p>
-            <p><strong>What happens:</strong></p>
+            <div class="info-box">
+                <h3>💡 Skills-Based Stabilization First?</h3>
+                <p>Some people benefit from skills-based therapy before trauma-focused work. Approaches like Seeking Safety or Skills Training in Affective and Interpersonal Regulation (STAIR) can help with emotion regulation and coping. Discuss with your provider what approach makes sense for you.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Finding a Trained Therapist</h2>
+            <p>Not all therapists are trained in evidence-based PTSD treatments. Here's how to find the right one:</p>
             <ul>
-                <li>History-taking and treatment planning</li>
-                <li>Learning coping skills for distress</li>
-                <li>Identifying target memories and associated negative beliefs</li>
-                <li>Desensitization: Processing memories while following eye movements</li>
-                <li>Installing positive beliefs to replace negative ones</li>
+                <li><strong>Ask about specific training:</strong> "Are you trained in CPT, PE, or EMDR?"</li>
+                <li><strong>Check credentials:</strong> Licensed psychologist, clinical social worker, or counselor</li>
+                <li><strong>VA resources:</strong> Veterans can access free PTSD treatment through the VA (1-877-222-8387)</li>
+                <li><strong>Psychology Today directory:</strong> Filter by PTSD specialty</li>
+                <li><strong>EMDR International Association:</strong> Therapist directory at emdria.org</li>
+                <li><strong>CPT Therapist Directory:</strong> cptforptsd.com</li>
             </ul>
-            <p><strong>Duration:</strong> Typically 6-12 sessions</p>
-            <p><strong>Note:</strong> May require less direct talking about trauma details than PE, which some find appealing.</p>
-        </div>
+        </section>
 
-        <h2>Medications</h2>
-        <p>Medications don't cure PTSD but can reduce symptoms, making therapy more tolerable and effective.</p>
-
-        <h3>FDA-Approved for PTSD</h3>
-        <ul>
-            <li><strong>Sertraline (Zoloft):</strong> SSRI antidepressant. Helps with all symptom clusters.</li>
-            <li><strong>Paroxetine (Paxil):</strong> SSRI antidepressant. Similar effectiveness to sertraline.</li>
-        </ul>
-
-        <h3>Other Commonly Used Medications</h3>
-        <ul>
-            <li><strong>Prazosin:</strong> Blood pressure medication that reduces nightmares. Often very effective for sleep.</li>
-            <li><strong>Venlafaxine (Effexor):</strong> SNRI antidepressant with good evidence for PTSD.</li>
-            <li><strong>Other SSRIs/SNRIs:</strong> Fluoxetine, citalopram, and others are sometimes used.</li>
-        </ul>
-
-        <div class="warning-box">
-            <h4>⚠️ Medications to Approach Cautiously</h4>
-            <p>Benzodiazepines (Xanax, Klonopin, Ativan) may provide short-term relief but can worsen PTSD outcomes long-term and carry addiction risk. They're generally not recommended for PTSD.</p>
-        </div>
-
-        <h2>What About Newer Treatments?</h2>
-
-        <h3>MDMA-Assisted Therapy</h3>
-        <p>Currently in Phase 3 trials and showing promising results. Uses MDMA in controlled therapeutic sessions to facilitate trauma processing. Not yet FDA-approved but may become available in coming years.</p>
-
-        <h3>Stellate Ganglion Block (SGB)</h3>
-        <p>An injection that blocks certain nerve signals. Some evidence for rapid symptom reduction, but more research needed. Not yet standard treatment.</p>
-
-        <h3>Ketamine</h3>
-        <p>Being studied for PTSD, particularly treatment-resistant cases. Some clinics offer it, but evidence is still emerging.</p>
-
-        <h2>How to Choose a Treatment</h2>
-        <p>The good news: PE, CPT, and EMDR have similar effectiveness. Consider:</p>
-        <ul>
-            <li><strong>Therapist availability:</strong> What trained therapists are near you or available online?</li>
-            <li><strong>Your preferences:</strong> Do you want to talk through the trauma in detail (PE) or focus more on beliefs (CPT)?</li>
-            <li><strong>Practical factors:</strong> Session length (PE is 90 min, CPT is 60 min) and homework requirements</li>
-        </ul>
-
-        <h2>What to Expect</h2>
-        <p>Treatment typically involves:</p>
-        <ol>
-            <li><strong>Assessment:</strong> Understanding your symptoms and trauma history</li>
-            <li><strong>Preparation:</strong> Learning about PTSD and building coping skills</li>
-            <li><strong>Processing:</strong> Working through trauma memories and beliefs</li>
-            <li><strong>Integration:</strong> Applying insights to daily life</li>
-        </ol>
-
-        <p><strong>It may get harder before it gets easier.</strong> Processing trauma can temporarily increase distress. This is normal and expected. A good therapist will pace treatment appropriately and help you manage symptoms.</p>
-
-        <p><strong>Homework matters.</strong> All evidence-based treatments involve practice between sessions. People who do the homework consistently have better outcomes.</p>
-
-        <h2>Finding a Trauma Therapist</h2>
-        <ul>
-            <li><strong>Ask about training:</strong> Have they been trained in PE, CPT, or EMDR specifically?</li>
-            <li><strong>Veterans:</strong> VA offers free PTSD treatment. Community Vet Centers also available.</li>
-            <li><strong>Directories:</strong> Psychology Today, EMDR International Association, and PTSD Foundation have therapist finders</li>
-            <li><strong>Telehealth:</strong> Many trauma therapies are effective via video—expands your options</li>
-        </ul>
-    </article>
+    </main>
 
     <footer>
         <div class="footer-inner">
-            <p>© 2026 ptsd.md · Part of the <a href="https://thrive.md">thrive.md</a> health network</p>
-            <p style="margin-top: 12px; font-size: 12px;">This website provides general health information. It is not a substitute for professional mental health treatment.</p>
+            <p>© 2026 ptsd.md · Part of <a href="https://thrive.md" style="color: var(--accent); text-decoration: none;">thrive.md</a></p>
+            <p style="margin-top: 8px; font-size: 12px;">Information based on VA/DoD Clinical Practice Guidelines and APA treatment guidelines. Always consult a mental health professional.</p>
         </div>
     </footer>
-<p style="text-align:center;color:#64748b;font-size:12px;padding:20px;">Last reviewed: February 2026</p></body>
+</body>
 </html>

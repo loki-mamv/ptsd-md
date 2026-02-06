@@ -2,74 +2,234 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="ai-content" content="allowed">
-    <meta name="ai-training" content="allowed">
-    <meta name="ai-topic" content="PTSD, trauma, mental health, therapy">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PTSD Symptoms — Complete Guide to Signs & Symptoms | ptsd.md</title>
-    <meta name="description" content="Comprehensive guide to PTSD symptoms: intrusive memories, avoidance, negative thoughts, and hyperarousal. Learn to recognize the signs.">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@thraborivemd">
-    <meta name="twitter:title" content="PTSD Guide">
-    <meta name="twitter:description" content="Evidence-based health information from ptsd.md">
+    <title>PTSD Symptoms — Complete Guide to Signs & Diagnosis</title>
+    <meta name="description" content="Complete guide to PTSD symptoms including intrusive memories, avoidance, negative changes in mood, and hyperarousal. Learn about DSM-5 diagnostic criteria and when to seek help.">
     <link rel="canonical" href="https://ptsd.md/symptoms.html">
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext x='16' y='24' font-family='-apple-system,system-ui,sans-serif' font-weight='800' font-size='16' fill='%2306b6d4' text-anchor='middle'%3E.md%3C/text%3E%3C/svg%3E">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext x='16' y='24' font-family='-apple-system,system-ui,sans-serif' font-weight='800' font-size='16' fill='%230d9488' text-anchor='middle' letter-spacing='-0.5'%3E.md%3C/text%3E%3C/svg%3E">
     <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <style>
         :root {
             --bg-primary: #ffffff;
             --bg-secondary: #f8fafc;
+            --bg-tertiary: #f1f5f9;
             --text-primary: #0f172a;
             --text-secondary: #475569;
             --text-muted: #94a3b8;
-            --accent: #06b6d4;
-            --accent-dark: #0891b2;
-            --accent-light: #cffafe;
+            --accent: #0d9488;
+            --accent-dark: #0f766e;
+            --accent-light: #ccfbf1;
             --border: #e2e8f0;
             --font-display: 'Source Serif 4', Georgia, serif;
             --font-body: 'Inter', -apple-system, sans-serif;
         }
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: var(--font-body); background: var(--bg-primary); color: var(--text-primary); line-height: 1.8; font-size: 17px; }
-        
-        header { background: var(--bg-primary); border-bottom: 1px solid var(--border); padding: 16px 24px; position: sticky; top: 0; z-index: 100; }
-        .header-inner { max-width: 800px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
-        .logo { font-family: var(--font-display); font-size: 22px; font-weight: 600; color: var(--text-primary); text-decoration: none; }
+        body {
+            font-family: var(--font-body);
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            font-size: 16px;
+        }
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border);
+        }
+        .header-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 16px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-family: var(--font-display);
+            font-size: 22px;
+            font-weight: 600;
+            color: var(--text-primary);
+            text-decoration: none;
+        }
         .logo span { color: var(--accent); }
-        nav a { color: var(--text-secondary); text-decoration: none; margin-left: 24px; font-size: 15px; }
+        nav { display: flex; gap: 32px; }
+        nav a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
         nav a:hover { color: var(--accent); }
-        
-        article { max-width: 700px; margin: 0 auto; padding: 60px 24px 80px; }
-        .breadcrumb { font-size: 14px; color: var(--text-muted); margin-bottom: 16px; }
-        .breadcrumb a { color: var(--accent); text-decoration: none; }
-        h1 { font-family: var(--font-display); font-size: clamp(32px, 5vw, 42px); font-weight: 700; line-height: 1.2; margin-bottom: 16px; }
-        .article-meta { font-size: 14px; color: var(--text-muted); margin-bottom: 24px; }
-        .article-intro { font-size: 19px; color: var(--text-secondary); padding-bottom: 32px; border-bottom: 1px solid var(--border); margin-bottom: 32px; }
-        
-        h2 { font-family: var(--font-display); font-size: 28px; font-weight: 600; margin: 48px 0 20px; }
-        h3 { font-family: var(--font-display); font-size: 22px; font-weight: 600; margin: 36px 0 16px; }
-        p { margin-bottom: 20px; }
-        ul, ol { margin: 0 0 20px 24px; }
-        li { margin-bottom: 10px; }
-        
-        .cluster-box { background: var(--bg-secondary); border-radius: 16px; padding: 28px; margin: 32px 0; }
-        .cluster-box h3 { margin-top: 0; font-size: 22px; display: flex; align-items: center; gap: 12px; }
-        .cluster-box h3 span { font-size: 28px; }
-        .cluster-box ul { margin-top: 16px; }
-        
-        .key-points { background: var(--accent-light); border-radius: 12px; padding: 24px 28px; margin: 32px 0; }
-        .key-points h4 { font-size: 16px; font-weight: 600; color: var(--accent-dark); margin-bottom: 12px; }
-        .key-points p { margin: 0; }
-        
-        .warning-box { background: #fef2f2; border-left: 4px solid #ef4444; padding: 20px 24px; margin: 32px 0; border-radius: 0 8px 8px 0; }
-        .warning-box h4 { color: #b91c1c; margin-bottom: 8px; }
-        .warning-box p { margin: 0; color: #7f1d1d; }
-        
-        footer { background: var(--bg-secondary); border-top: 1px solid var(--border); padding: 48px 24px; }
-        .footer-inner { max-width: 700px; margin: 0 auto; text-align: center; font-size: 14px; color: var(--text-muted); }
-        .footer-inner a { color: var(--accent); text-decoration: none; }
-        
-        @media (max-width: 768px) { nav { display: none; } }
+        main {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 120px 24px 64px;
+        }
+        .page-header {
+            margin-bottom: 48px;
+        }
+        .page-eyebrow {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+        }
+        h1 {
+            font-family: var(--font-display);
+            font-size: clamp(32px, 5vw, 42px);
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 16px;
+            color: var(--text-primary);
+        }
+        .page-subtitle {
+            font-size: 18px;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+        .section {
+            margin-bottom: 48px;
+        }
+        h2 {
+            font-family: var(--font-display);
+            font-size: 26px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            color: var(--text-primary);
+        }
+        h3 {
+            font-family: var(--font-display);
+            font-size: 19px;
+            font-weight: 600;
+            margin: 24px 0 12px;
+            color: var(--text-primary);
+        }
+        p {
+            font-size: 17px;
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+            line-height: 1.7;
+        }
+        .symptom-cluster {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-left: 4px solid var(--accent);
+            border-radius: 8px;
+            padding: 24px;
+            margin: 24px 0;
+        }
+        .symptom-cluster h3 {
+            margin-top: 0;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .symptom-cluster ul {
+            margin: 16px 0 0 20px;
+        }
+        .symptom-cluster li {
+            margin-bottom: 8px;
+            color: var(--text-secondary);
+        }
+        .info-box {
+            background: var(--accent-light);
+            border: 1px solid var(--accent);
+            border-left: 4px solid var(--accent);
+            border-radius: 8px;
+            padding: 20px;
+            margin: 24px 0;
+        }
+        .info-box h3 {
+            margin-top: 0;
+            font-size: 17px;
+            color: var(--accent-dark);
+        }
+        .info-box p {
+            color: var(--accent-dark);
+            font-size: 15px;
+            margin-bottom: 0;
+        }
+        .warning-box {
+            background: #fef2f2;
+            border: 1px solid #fecaca;
+            border-left: 4px solid #ef4444;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 24px 0;
+        }
+        .warning-box h3 {
+            color: #991b1b;
+            margin-top: 0;
+            font-size: 17px;
+        }
+        .warning-box p {
+            color: #7f1d1d;
+            font-size: 15px;
+            margin-bottom: 0;
+        }
+        ul, ol {
+            margin-left: 24px;
+            margin-bottom: 16px;
+            color: var(--text-secondary);
+            line-height: 1.8;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .criteria-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 24px 0;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .criteria-table thead {
+            background: var(--bg-secondary);
+        }
+        .criteria-table th {
+            padding: 12px 16px;
+            text-align: left;
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--text-primary);
+            border-bottom: 1px solid var(--border);
+        }
+        .criteria-table td {
+            padding: 12px 16px;
+            font-size: 15px;
+            color: var(--text-secondary);
+            border-bottom: 1px solid var(--border);
+        }
+        .criteria-table tr:last-child td {
+            border-bottom: none;
+        }
+        footer {
+            background: var(--bg-secondary);
+            border-top: 1px solid var(--border);
+            padding: 48px 24px;
+            margin-top: 80px;
+        }
+        .footer-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 14px;
+            color: var(--text-muted);
+        }
+        @media (max-width: 768px) {
+            nav { display: none; }
+            main { padding: 100px 16px 40px; }
+        }
     </style>
 </head>
 <body>
@@ -78,110 +238,175 @@
             <a href="/" class="logo">ptsd<span>.md</span></a>
             <nav>
                 <a href="/">Home</a>
-                <a href="/blog.html">Articles</a>
-                <a href="/resources.html">Resources</a>
+                <a href="/symptoms.html">Symptoms</a>
+                <a href="/treatment.html">Treatment</a>
+                <a href="/recovery.html">Recovery</a>
+                <a href="/faq.html">FAQ</a>
             </nav>
         </div>
     </header>
 
-    <article>
-        <div class="breadcrumb"><a href="/">Home</a> / <a href="/blog.html">Articles</a> / Symptoms</div>
-        <h1>PTSD Symptoms</h1>
-        <div class="article-meta">Updated Feb 2026 · 10 min read</div>
-        <p class="article-intro">PTSD symptoms fall into four clusters. For a diagnosis, symptoms must persist for more than a month and significantly impact daily life.</p>
-
-        <div class="key-points">
-            <h4>Diagnostic Criteria Overview</h4>
-            <p>To be diagnosed with PTSD, you must have experienced or witnessed a traumatic event AND have symptoms from each of the four clusters below for more than one month, causing significant distress or impairment.</p>
+    <main>
+        <div class="page-header">
+            <div class="page-eyebrow">Symptoms Guide</div>
+            <h1>PTSD Symptoms: A Complete Guide</h1>
+            <p class="page-subtitle">Understanding the signs of Post-Traumatic Stress Disorder, DSM-5 diagnostic criteria, and how symptoms differ from normal stress reactions.</p>
         </div>
-
-        <div class="cluster-box">
-            <h3><span>🔄</span> Cluster B: Intrusion / Re-experiencing</h3>
-            <p>The trauma keeps coming back uninvited. Need at least <strong>one</strong> of:</p>
-            <ul>
-                <li><strong>Intrusive memories:</strong> Unwanted, distressing memories of the trauma that pop up spontaneously</li>
-                <li><strong>Nightmares:</strong> Distressing dreams related to the traumatic event</li>
-                <li><strong>Flashbacks:</strong> Feeling or acting as if the trauma is happening again. The most severe form—you may lose awareness of your current surroundings</li>
-                <li><strong>Psychological distress:</strong> Intense emotional reactions when reminded of the trauma</li>
-                <li><strong>Physical reactions:</strong> Racing heart, sweating, nausea when reminded</li>
-            </ul>
-        </div>
-
-        <div class="cluster-box">
-            <h3><span>🚫</span> Cluster C: Avoidance</h3>
-            <p>Actively avoiding anything related to the trauma. Need at least <strong>one</strong> of:</p>
-            <ul>
-                <li><strong>Internal avoidance:</strong> Efforts to avoid distressing memories, thoughts, or feelings about the trauma</li>
-                <li><strong>External avoidance:</strong> Efforts to avoid people, places, activities, objects, or situations that trigger memories</li>
-            </ul>
-            <p>Avoidance feels protective but maintains PTSD by preventing the brain from processing the memory normally.</p>
-        </div>
-
-        <div class="cluster-box">
-            <h3><span>💭</span> Cluster D: Negative Cognitions & Mood</h3>
-            <p>Changes in thoughts and feelings after the trauma. Need at least <strong>two</strong> of:</p>
-            <ul>
-                <li><strong>Memory gaps:</strong> Inability to remember important aspects of the trauma (not due to head injury or substances)</li>
-                <li><strong>Negative beliefs:</strong> Persistent, distorted beliefs about yourself, others, or the world ("I'm broken," "No one can be trusted," "The world is completely dangerous")</li>
-                <li><strong>Distorted blame:</strong> Persistent self-blame or blame of others for causing the trauma or its consequences</li>
-                <li><strong>Persistent negative emotions:</strong> Ongoing fear, horror, anger, guilt, or shame</li>
-                <li><strong>Diminished interest:</strong> Markedly decreased interest in activities that used to matter</li>
-                <li><strong>Detachment:</strong> Feeling distant or cut off from others</li>
-                <li><strong>Inability to feel positive:</strong> Persistent inability to experience happiness, satisfaction, or loving feelings</li>
-            </ul>
-        </div>
-
-        <div class="cluster-box">
-            <h3><span>⚡</span> Cluster E: Arousal & Reactivity</h3>
-            <p>Changes in how alert and reactive you are. Need at least <strong>two</strong> of:</p>
-            <ul>
-                <li><strong>Irritability:</strong> Irritable behavior and angry outbursts with little provocation</li>
-                <li><strong>Reckless behavior:</strong> Self-destructive or reckless actions</li>
-                <li><strong>Hypervigilance:</strong> Being on constant alert for danger</li>
-                <li><strong>Exaggerated startle:</strong> Jumping at sounds or movements others ignore</li>
-                <li><strong>Concentration problems:</strong> Difficulty focusing or paying attention</li>
-                <li><strong>Sleep disturbance:</strong> Difficulty falling or staying asleep</li>
-            </ul>
-        </div>
-
-        <h2>Related Conditions</h2>
-
-        <h3>Complex PTSD (C-PTSD)</h3>
-        <p>Not yet an official diagnosis in the US (DSM-5) but recognized by the WHO (ICD-11). Develops from prolonged, repeated trauma—often during childhood. In addition to PTSD symptoms, includes:</p>
-        <ul>
-            <li>Difficulty regulating emotions</li>
-            <li>Negative self-concept and chronic shame</li>
-            <li>Difficulty in relationships and trust</li>
-        </ul>
-
-        <h3>Acute Stress Disorder</h3>
-        <p>Similar symptoms to PTSD but lasting less than one month after trauma. May or may not develop into PTSD. Treatment can prevent progression.</p>
-
-        <h2>What Symptoms Are NOT</h2>
-        <p>PTSD symptoms are not:</p>
-        <ul>
-            <li><strong>Weakness or character flaws.</strong> PTSD is a neurobiological response to overwhelming stress.</li>
-            <li><strong>Permanent.</strong> With treatment, symptoms significantly improve or resolve for most people.</li>
-            <li><strong>"Going crazy."</strong> These are normal reactions to abnormal events.</li>
-            <li><strong>Your fault.</strong> You didn't choose to develop PTSD.</li>
-        </ul>
 
         <div class="warning-box">
-            <h4>🚨 When to Seek Help Immediately</h4>
-            <p>Get help right away if you're having thoughts of suicide or self-harm, experiencing severe flashbacks or dissociation, or using substances to cope. Call 988 (Suicide & Crisis Lifeline) or go to your nearest emergency room.</p>
+            <h3>🆘 Need Immediate Help?</h3>
+            <p>If you're experiencing a mental health crisis or thoughts of self-harm, contact the 988 Suicide & Crisis Lifeline by calling or texting <strong>988</strong>. Help is available 24/7.</p>
         </div>
 
-        <h2>Do I Have PTSD?</h2>
-        <p>Only a qualified mental health professional can diagnose PTSD. If you recognize several of these symptoms in yourself after a traumatic experience, it's worth seeking an evaluation. Early treatment leads to better outcomes.</p>
+        <section class="section">
+            <h2>The Four Symptom Clusters</h2>
+            <p>PTSD symptoms are organized into four main categories according to the DSM-5. To be diagnosed with PTSD, you must have symptoms from each cluster that persist for more than one month and cause significant distress or impairment.</p>
+            
+            <div class="symptom-cluster">
+                <h3>🔄 Cluster B: Intrusive Symptoms (1+ required)</h3>
+                <p>Re-experiencing the trauma through:</p>
+                <ul>
+                    <li><strong>Flashbacks</strong> — Feeling like the trauma is happening again, with physical sensations</li>
+                    <li><strong>Intrusive memories</strong> — Unwanted, distressing memories that pop up unexpectedly</li>
+                    <li><strong>Nightmares</strong> — Recurring dreams related to the traumatic event</li>
+                    <li><strong>Emotional distress</strong> — Intense reactions when reminded of the trauma</li>
+                    <li><strong>Physical reactivity</strong> — Racing heart, sweating, or trembling when triggered</li>
+                </ul>
+            </div>
 
-        <p>Many people experience some trauma symptoms in the weeks after a traumatic event. This is normal. The concern is when symptoms persist beyond a month and interfere with your life.</p>
-    </article>
+            <div class="symptom-cluster">
+                <h3>🚫 Cluster C: Avoidance (1+ required)</h3>
+                <p>Persistent avoidance of trauma-related stimuli:</p>
+                <ul>
+                    <li><strong>Internal avoidance</strong> — Avoiding thoughts, feelings, or memories about the trauma</li>
+                    <li><strong>External avoidance</strong> — Avoiding people, places, activities, objects, or situations that trigger memories</li>
+                    <li><strong>Emotional numbing</strong> — Feeling detached or unable to experience positive emotions</li>
+                </ul>
+            </div>
+
+            <div class="symptom-cluster">
+                <h3>😔 Cluster D: Negative Changes in Cognition & Mood (2+ required)</h3>
+                <p>Persistent negative alterations in thinking and feelings:</p>
+                <ul>
+                    <li><strong>Memory problems</strong> — Inability to recall key aspects of the traumatic event</li>
+                    <li><strong>Negative beliefs</strong> — Persistent negative thoughts about yourself, others, or the world ("I'm bad," "No one can be trusted," "The world is dangerous")</li>
+                    <li><strong>Distorted blame</strong> — Blaming yourself or others for causing the trauma or its consequences</li>
+                    <li><strong>Persistent negative emotions</strong> — Ongoing fear, horror, anger, guilt, or shame</li>
+                    <li><strong>Loss of interest</strong> — Diminished interest in activities you used to enjoy</li>
+                    <li><strong>Detachment</strong> — Feeling estranged or disconnected from others</li>
+                    <li><strong>Emotional range</strong> — Inability to experience positive emotions like happiness or love</li>
+                </ul>
+            </div>
+
+            <div class="symptom-cluster">
+                <h3>⚡ Cluster E: Arousal & Reactivity Changes (2+ required)</h3>
+                <p>Marked changes in arousal and reactivity:</p>
+                <ul>
+                    <li><strong>Irritability</strong> — Angry outbursts with little or no provocation</li>
+                    <li><strong>Reckless behavior</strong> — Self-destructive or risk-taking behavior</li>
+                    <li><strong>Hypervigilance</strong> — Being constantly "on guard" for danger</li>
+                    <li><strong>Exaggerated startle</strong> — Jumping at sudden noises or movements</li>
+                    <li><strong>Concentration problems</strong> — Difficulty focusing on tasks</li>
+                    <li><strong>Sleep disturbance</strong> — Trouble falling or staying asleep</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>DSM-5 Diagnostic Criteria Summary</h2>
+            <table class="criteria-table">
+                <thead>
+                    <tr>
+                        <th>Criterion</th>
+                        <th>Requirement</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>A. Trauma Exposure</strong></td>
+                        <td>Direct experience, witnessing, learning about trauma to close family/friend, or repeated exposure to aversive details</td>
+                    </tr>
+                    <tr>
+                        <td><strong>B. Intrusive Symptoms</strong></td>
+                        <td>At least 1 symptom</td>
+                    </tr>
+                    <tr>
+                        <td><strong>C. Avoidance</strong></td>
+                        <td>At least 1 symptom</td>
+                    </tr>
+                    <tr>
+                        <td><strong>D. Cognition/Mood</strong></td>
+                        <td>At least 2 symptoms</td>
+                    </tr>
+                    <tr>
+                        <td><strong>E. Arousal/Reactivity</strong></td>
+                        <td>At least 2 symptoms</td>
+                    </tr>
+                    <tr>
+                        <td><strong>F. Duration</strong></td>
+                        <td>Symptoms persist more than 1 month</td>
+                    </tr>
+                    <tr>
+                        <td><strong>G. Impairment</strong></td>
+                        <td>Symptoms cause significant distress or functional impairment</td>
+                    </tr>
+                    <tr>
+                        <td><strong>H. Exclusion</strong></td>
+                        <td>Symptoms not due to medication, substances, or another medical condition</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="section">
+            <h2>PTSD vs. Normal Stress Reactions</h2>
+            <p>It's completely normal to feel distressed after experiencing trauma. Here's how to tell the difference:</p>
+            
+            <h3>Normal Stress Response</h3>
+            <ul>
+                <li>Symptoms gradually decrease over days to weeks</li>
+                <li>You can talk about what happened without becoming overwhelmed</li>
+                <li>Sleep and appetite return to normal</li>
+                <li>You gradually resume normal activities</li>
+                <li>Distressing memories become less frequent and intense</li>
+            </ul>
+
+            <h3>Signs That May Indicate PTSD</h3>
+            <ul>
+                <li>Symptoms persist beyond one month without improvement</li>
+                <li>Symptoms may actually get worse over time</li>
+                <li>You avoid thinking or talking about what happened</li>
+                <li>Flashbacks or nightmares feel as real as the original event</li>
+                <li>You're unable to function at work, school, or in relationships</li>
+                <li>You've started using alcohol or drugs to cope</li>
+            </ul>
+
+            <div class="info-box">
+                <h3>💡 When to Seek Help</h3>
+                <p>If symptoms persist beyond a few weeks, interfere with daily life, or you're having thoughts of self-harm, it's time to talk to a mental health professional. Early treatment leads to better outcomes.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Related Conditions</h2>
+            
+            <h3>Acute Stress Disorder (ASD)</h3>
+            <p>Similar symptoms to PTSD but occurring within the first month after trauma. About half of people with ASD go on to develop PTSD.</p>
+            
+            <h3>Complex PTSD (C-PTSD)</h3>
+            <p>Results from prolonged, repeated trauma (such as childhood abuse). Includes additional symptoms: emotional dysregulation, negative self-concept, and relationship difficulties. Recognized in ICD-11.</p>
+            
+            <h3>Adjustment Disorder</h3>
+            <p>Emotional or behavioral symptoms in response to a stressful life event, but doesn't meet full criteria for PTSD. Generally less severe.</p>
+        </section>
+
+    </main>
 
     <footer>
         <div class="footer-inner">
-            <p>© 2026 ptsd.md · Part of the <a href="https://thrive.md">thrive.md</a> health network</p>
-            <p style="margin-top: 12px; font-size: 12px;">This website provides general health information. It is not a substitute for professional evaluation.</p>
+            <p>© 2026 ptsd.md · Part of <a href="https://thrive.md" style="color: var(--accent); text-decoration: none;">thrive.md</a></p>
+            <p style="margin-top: 8px; font-size: 12px;">Information based on DSM-5 and clinical guidelines. This is not a diagnostic tool. Always consult a mental health professional.</p>
         </div>
     </footer>
-<p style="text-align:center;color:#64748b;font-size:12px;padding:20px;">Last reviewed: February 2026</p></body>
+</body>
 </html>

@@ -2,69 +2,199 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="ai-content" content="allowed">
-    <meta name="ai-training" content="allowed">
-    <meta name="ai-topic" content="PTSD, trauma, mental health, therapy">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PTSD Recovery — Healing After Trauma | ptsd.md</title>
-    <meta name="description" content="Recovery from PTSD is possible. What healing looks like, coping strategies, and building a life beyond trauma.">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@thraborivemd">
-    <meta name="twitter:title" content="PTSD Guide">
-    <meta name="twitter:description" content="Evidence-based health information from ptsd.md">
+    <title>PTSD Recovery — Living With & Beyond Trauma</title>
+    <meta name="description" content="Guide to PTSD recovery including what to expect during treatment, coping strategies, supporting your healing journey, and understanding post-traumatic growth.">
     <link rel="canonical" href="https://ptsd.md/recovery.html">
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext x='16' y='24' font-family='-apple-system,system-ui,sans-serif' font-weight='800' font-size='16' fill='%2306b6d4' text-anchor='middle'%3E.md%3C/text%3E%3C/svg%3E">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext x='16' y='24' font-family='-apple-system,system-ui,sans-serif' font-weight='800' font-size='16' fill='%230d9488' text-anchor='middle' letter-spacing='-0.5'%3E.md%3C/text%3E%3C/svg%3E">
     <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <style>
         :root {
             --bg-primary: #ffffff;
             --bg-secondary: #f8fafc;
+            --bg-tertiary: #f1f5f9;
             --text-primary: #0f172a;
             --text-secondary: #475569;
             --text-muted: #94a3b8;
-            --accent: #06b6d4;
-            --accent-dark: #0891b2;
-            --accent-light: #cffafe;
+            --accent: #0d9488;
+            --accent-dark: #0f766e;
+            --accent-light: #ccfbf1;
             --border: #e2e8f0;
             --font-display: 'Source Serif 4', Georgia, serif;
             --font-body: 'Inter', -apple-system, sans-serif;
         }
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: var(--font-body); background: var(--bg-primary); color: var(--text-primary); line-height: 1.8; font-size: 17px; }
-        
-        header { background: var(--bg-primary); border-bottom: 1px solid var(--border); padding: 16px 24px; position: sticky; top: 0; z-index: 100; }
-        .header-inner { max-width: 800px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
-        .logo { font-family: var(--font-display); font-size: 22px; font-weight: 600; color: var(--text-primary); text-decoration: none; }
+        body {
+            font-family: var(--font-body);
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            font-size: 16px;
+        }
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border);
+        }
+        .header-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 16px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-family: var(--font-display);
+            font-size: 22px;
+            font-weight: 600;
+            color: var(--text-primary);
+            text-decoration: none;
+        }
         .logo span { color: var(--accent); }
-        nav a { color: var(--text-secondary); text-decoration: none; margin-left: 24px; font-size: 15px; }
+        nav { display: flex; gap: 32px; }
+        nav a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
         nav a:hover { color: var(--accent); }
-        
-        article { max-width: 700px; margin: 0 auto; padding: 60px 24px 80px; }
-        .breadcrumb { font-size: 14px; color: var(--text-muted); margin-bottom: 16px; }
-        .breadcrumb a { color: var(--accent); text-decoration: none; }
-        h1 { font-family: var(--font-display); font-size: clamp(32px, 5vw, 42px); font-weight: 700; line-height: 1.2; margin-bottom: 16px; }
-        .article-meta { font-size: 14px; color: var(--text-muted); margin-bottom: 24px; }
-        .article-intro { font-size: 19px; color: var(--text-secondary); padding-bottom: 32px; border-bottom: 1px solid var(--border); margin-bottom: 32px; }
-        
-        h2 { font-family: var(--font-display); font-size: 28px; font-weight: 600; margin: 48px 0 20px; }
-        h3 { font-family: var(--font-display); font-size: 22px; font-weight: 600; margin: 36px 0 16px; }
-        p { margin-bottom: 20px; }
-        ul, ol { margin: 0 0 20px 24px; }
-        li { margin-bottom: 10px; }
-        
-        .insight-box { background: var(--accent-light); border-radius: 12px; padding: 24px 28px; margin: 32px 0; }
-        .insight-box h4 { font-size: 16px; font-weight: 600; color: var(--accent-dark); margin-bottom: 12px; }
-        .insight-box p { margin: 0; }
-        
-        .strategy-card { background: var(--bg-secondary); border-radius: 12px; padding: 24px; margin: 20px 0; border-left: 4px solid var(--accent); }
-        .strategy-card h4 { font-size: 18px; font-weight: 600; margin-bottom: 8px; }
-        .strategy-card p { margin: 0; color: var(--text-secondary); }
-        
-        footer { background: var(--bg-secondary); border-top: 1px solid var(--border); padding: 48px 24px; }
-        .footer-inner { max-width: 700px; margin: 0 auto; text-align: center; font-size: 14px; color: var(--text-muted); }
-        .footer-inner a { color: var(--accent); text-decoration: none; }
-        
-        @media (max-width: 768px) { nav { display: none; } }
+        main {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 120px 24px 64px;
+        }
+        .page-header {
+            margin-bottom: 48px;
+        }
+        .page-eyebrow {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+        }
+        h1 {
+            font-family: var(--font-display);
+            font-size: clamp(32px, 5vw, 42px);
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 16px;
+            color: var(--text-primary);
+        }
+        .page-subtitle {
+            font-size: 18px;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+        .section {
+            margin-bottom: 48px;
+        }
+        h2 {
+            font-family: var(--font-display);
+            font-size: 26px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            color: var(--text-primary);
+        }
+        h3 {
+            font-family: var(--font-display);
+            font-size: 19px;
+            font-weight: 600;
+            margin: 24px 0 12px;
+            color: var(--text-primary);
+        }
+        p {
+            font-size: 17px;
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+            line-height: 1.7;
+        }
+        .info-box {
+            background: var(--accent-light);
+            border: 1px solid var(--accent);
+            border-left: 4px solid var(--accent);
+            border-radius: 8px;
+            padding: 20px;
+            margin: 24px 0;
+        }
+        .info-box h3 {
+            margin-top: 0;
+            font-size: 17px;
+            color: var(--accent-dark);
+        }
+        .info-box p {
+            color: var(--accent-dark);
+            font-size: 15px;
+            margin-bottom: 0;
+        }
+        .tip-card {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 20px;
+            margin: 16px 0;
+        }
+        .tip-card h4 {
+            font-family: var(--font-display);
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 8px;
+        }
+        .tip-card p {
+            font-size: 15px;
+            margin-bottom: 0;
+        }
+        ul, ol {
+            margin-left: 24px;
+            margin-bottom: 16px;
+            color: var(--text-secondary);
+            line-height: 1.8;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .quote-box {
+            background: var(--bg-secondary);
+            border-left: 4px solid var(--accent);
+            padding: 20px 24px;
+            margin: 24px 0;
+            font-style: italic;
+            color: var(--text-secondary);
+        }
+        .quote-box cite {
+            display: block;
+            margin-top: 12px;
+            font-style: normal;
+            font-size: 14px;
+            color: var(--text-muted);
+        }
+        footer {
+            background: var(--bg-secondary);
+            border-top: 1px solid var(--border);
+            padding: 48px 24px;
+            margin-top: 80px;
+        }
+        .footer-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 14px;
+            color: var(--text-muted);
+        }
+        @media (max-width: 768px) {
+            nav { display: none; }
+            main { padding: 100px 16px 40px; }
+        }
     </style>
 </head>
 <body>
@@ -73,146 +203,160 @@
             <a href="/" class="logo">ptsd<span>.md</span></a>
             <nav>
                 <a href="/">Home</a>
-                <a href="/blog.html">Articles</a>
-                <a href="/resources.html">Resources</a>
+                <a href="/symptoms.html">Symptoms</a>
+                <a href="/treatment.html">Treatment</a>
+                <a href="/recovery.html">Recovery</a>
+                <a href="/faq.html">FAQ</a>
             </nav>
         </div>
     </header>
 
-    <article>
-        <div class="breadcrumb"><a href="/">Home</a> / <a href="/blog.html">Articles</a> / Recovery</div>
-        <h1>PTSD Recovery</h1>
-        <div class="article-meta">Updated Feb 2026 · 12 min read</div>
-        <p class="article-intro">Recovery from PTSD isn't about forgetting what happened—it's about the trauma no longer controlling your life. Healing is possible, and it looks different for everyone.</p>
-
-        <h2>What Does Recovery Look Like?</h2>
-        <p>Recovery from PTSD doesn't mean:</p>
-        <ul>
-            <li>Erasing the memory</li>
-            <li>Never thinking about it again</li>
-            <li>Being "over it" completely</li>
-            <li>Returning to exactly who you were before</li>
-        </ul>
-
-        <p>Recovery <em>does</em> mean:</p>
-        <ul>
-            <li>The trauma memory becomes a painful memory—not a present-moment emergency</li>
-            <li>Triggers still happen but don't hijack your whole day</li>
-            <li>You can engage in meaningful activities and relationships</li>
-            <li>You feel more in control of your emotions and reactions</li>
-            <li>The trauma becomes part of your story, not your entire identity</li>
-        </ul>
-
-        <div class="insight-box">
-            <h4>A Helpful Framework</h4>
-            <p>Think of PTSD as a memory that's "stuck" in the alarm system of your brain. It keeps triggering as if the danger is present. Recovery is about helping the brain properly file that memory as something that happened <em>in the past</em>—it's over, you survived, you're safe now.</p>
+    <main>
+        <div class="page-header">
+            <div class="page-eyebrow">Recovery Guide</div>
+            <h1>Living With & Recovering From PTSD</h1>
+            <p class="page-subtitle">What to expect during the recovery journey, strategies for supporting your healing, and understanding life after trauma.</p>
         </div>
 
-        <h2>The Non-Linear Path</h2>
-        <p>Recovery isn't a straight line from "sick" to "well." Expect:</p>
-        <ul>
-            <li><strong>Good days and bad days</strong>—even good weeks followed by hard ones</li>
-            <li><strong>Anniversaries and triggers</strong>—certain times of year or unexpected reminders may always be harder</li>
-            <li><strong>Two steps forward, one step back</strong>—this is normal, not failure</li>
-            <li><strong>Different symptoms improving at different rates</strong>—nightmares might improve before hypervigilance, or vice versa</li>
-        </ul>
+        <section class="section">
+            <h2>What Recovery Looks Like</h2>
+            <p>Recovery from PTSD is possible. With evidence-based treatment, most people experience significant improvement. Here's what recovery often looks like:</p>
+            <ul>
+                <li><strong>Trauma memories become less intrusive</strong> — You can think about what happened without being overwhelmed</li>
+                <li><strong>Flashbacks decrease or stop</strong> — When memories arise, they feel like the past, not the present</li>
+                <li><strong>Avoidance decreases</strong> — You can go to places and do things you've been avoiding</li>
+                <li><strong>Sleep improves</strong> — Nightmares become less frequent; you sleep more restfully</li>
+                <li><strong>Hypervigilance decreases</strong> — You feel less "on guard" and startle less easily</li>
+                <li><strong>Emotions stabilize</strong> — You can experience a fuller range of emotions, including joy</li>
+                <li><strong>Relationships improve</strong> — You feel more connected to others</li>
+                <li><strong>The trauma becomes part of your history</strong> — It's integrated into your story, not defining it</li>
+            </ul>
 
-        <p>The overall trend matters more than any single day. Zoom out and look at months, not moments.</p>
+            <div class="quote-box">
+                "Recovery doesn't mean the damage never existed. It means the damage no longer controls your life."
+                <cite>— Common saying in trauma recovery</cite>
+            </div>
+        </section>
 
-        <h2>Daily Coping Strategies</h2>
-        <p>While working through treatment, these strategies help manage day-to-day symptoms:</p>
+        <section class="section">
+            <h2>The Recovery Journey</h2>
+            <p>Recovery is rarely a straight line. Here's what to expect:</p>
+            
+            <h3>Early Treatment (Weeks 1-4)</h3>
+            <ul>
+                <li>Learning about PTSD and how it affects you</li>
+                <li>Building a relationship with your therapist</li>
+                <li>Learning coping skills for distress</li>
+                <li>Symptoms may temporarily increase as you begin to address trauma</li>
+            </ul>
 
-        <div class="strategy-card">
-            <h4>🌬️ Grounding Techniques</h4>
-            <p>When triggered or dissociating, bring yourself back to the present. Try the 5-4-3-2-1 method: Name 5 things you see, 4 you hear, 3 you can touch, 2 you smell, 1 you taste. Feel your feet on the floor. Hold ice or splash cold water on your face.</p>
-        </div>
+            <h3>Active Processing (Weeks 4-12)</h3>
+            <ul>
+                <li>Working directly with trauma memories and beliefs</li>
+                <li>This is often the hardest but most transformative phase</li>
+                <li>You may feel worse before you feel better—this is normal</li>
+                <li>Many people notice improvements by sessions 6-8</li>
+            </ul>
 
-        <div class="strategy-card">
-            <h4>🫁 Breathing Exercises</h4>
-            <p>Slow, deep breathing activates your parasympathetic nervous system (the "calm down" system). Try 4-7-8 breathing: Inhale for 4 counts, hold for 7, exhale for 8. Even just lengthening your exhale helps.</p>
-        </div>
+            <h3>Integration & Growth (Weeks 12+)</h3>
+            <ul>
+                <li>Symptoms significantly reduced for most people</li>
+                <li>Learning to apply new skills to daily life</li>
+                <li>Rebuilding relationships and activities</li>
+                <li>Developing a new relationship with your story</li>
+            </ul>
 
-        <div class="strategy-card">
-            <h4>🏃 Physical Activity</h4>
-            <p>Exercise helps burn off stress hormones and regulate your nervous system. Even a 20-minute walk makes a difference. Yoga and martial arts are particularly beneficial for trauma.</p>
-        </div>
+            <div class="info-box">
+                <h3>💪 Setbacks Are Normal</h3>
+                <p>Recovery isn't linear. Anniversaries, stressors, or reminders may temporarily increase symptoms. This doesn't mean treatment failed—it means you're human. Use your coping skills, reach out for support, and be patient with yourself.</p>
+            </div>
+        </section>
 
-        <div class="strategy-card">
-            <h4>😴 Sleep Hygiene</h4>
-            <p>PTSD often disrupts sleep, and poor sleep worsens PTSD. Keep a consistent schedule, make your bedroom a calm space, limit screens before bed, and ask your doctor about prazosin if nightmares are severe.</p>
-        </div>
+        <section class="section">
+            <h2>Supporting Your Recovery</h2>
+            
+            <div class="tip-card">
+                <h4>🧘 Ground Yourself</h4>
+                <p>When triggered or dissociating, use grounding techniques: 5-4-3-2-1 (name 5 things you see, 4 you hear, 3 you can touch, 2 you smell, 1 you taste). Focus on the present moment.</p>
+            </div>
 
-        <div class="strategy-card">
-            <h4>📝 Journaling</h4>
-            <p>Writing can help process emotions and track patterns. Some people write about the trauma directly; others journal about daily experiences. There's no wrong approach.</p>
-        </div>
+            <div class="tip-card">
+                <h4>🏃 Move Your Body</h4>
+                <p>Regular physical activity helps reduce PTSD symptoms. Exercise releases tension stored in the body and improves sleep. Even a daily 20-minute walk can help.</p>
+            </div>
 
-        <h2>Building Safety</h2>
-        <p>Trauma disrupts your sense of safety. Rebuilding it takes time and intention:</p>
+            <div class="tip-card">
+                <h4>😴 Prioritize Sleep</h4>
+                <p>Good sleep hygiene supports recovery: keep a consistent schedule, avoid screens before bed, create a calm sleep environment. If nightmares persist, ask about prazosin.</p>
+            </div>
 
-        <h3>Internal Safety</h3>
-        <ul>
-            <li>Learn to recognize when your body goes into fight/flight/freeze</li>
-            <li>Practice soothing yourself without avoiding feelings</li>
-            <li>Trust that intense emotions will pass—they always do</li>
-            <li>Build tolerance for distress gradually</li>
-        </ul>
+            <div class="tip-card">
+                <h4>🍷 Limit Substances</h4>
+                <p>Alcohol and drugs may seem to help short-term but worsen PTSD over time. They interfere with trauma processing and can lead to additional problems. If you're struggling with substance use, tell your provider.</p>
+            </div>
 
-        <h3>External Safety</h3>
-        <ul>
-            <li>Create routines and predictability where possible</li>
-            <li>Surround yourself with trustworthy people</li>
-            <li>Set boundaries that protect your wellbeing</li>
-            <li>Make your physical space feel secure and comfortable</li>
-        </ul>
+            <div class="tip-card">
+                <h4>👥 Connect With Others</h4>
+                <p>Isolation worsens PTSD. Lean on trusted people, join a support group, or connect with others who understand. You don't have to share your trauma—just being around safe people helps.</p>
+            </div>
 
-        <h2>Relationships and Connection</h2>
-        <p>Trauma often happens in relationship (abuse, assault, betrayal) or isolates us (combat, disasters). Healing often happens in relationship too.</p>
+            <div class="tip-card">
+                <h4>📝 Commit to Treatment</h4>
+                <p>Evidence-based therapy works, but only if you show up. Complete the homework, attend sessions, and stay engaged even when it's hard. The majority of people who finish treatment see significant improvement.</p>
+            </div>
+        </section>
 
-        <ul>
-            <li><strong>Support doesn't mean everyone needs to know.</strong> Choose carefully who you share with.</li>
-            <li><strong>Let people help.</strong> Isolating feels protective but worsens PTSD.</li>
-            <li><strong>Repair is possible.</strong> If trauma damaged relationships, some can be rebuilt. Others may need to end—and that's okay too.</li>
-            <li><strong>Professional support helps.</strong> Therapists, support groups, and peer specialists offer different kinds of connection.</li>
-        </ul>
+        <section class="section">
+            <h2>Post-Traumatic Growth</h2>
+            <p>Many trauma survivors experience positive changes after processing their trauma—a phenomenon researchers call post-traumatic growth. This isn't about "silver linings" or minimizing what happened. It's about the genuine growth that can emerge from struggle.</p>
+            
+            <h3>Domains of Post-Traumatic Growth</h3>
+            <ul>
+                <li><strong>Personal strength</strong> — "If I survived that, I can handle this"</li>
+                <li><strong>New possibilities</strong> — New paths or opportunities that wouldn't have emerged otherwise</li>
+                <li><strong>Deeper relationships</strong> — Greater intimacy and compassion with others</li>
+                <li><strong>Appreciation for life</strong> — Changed priorities; valuing what matters</li>
+                <li><strong>Spiritual or existential change</strong> — Deeper sense of meaning or purpose</li>
+            </ul>
 
-        <h2>Post-Traumatic Growth</h2>
-        <p>Many people who recover from trauma report unexpected positive changes:</p>
-        <ul>
-            <li>Greater appreciation for life</li>
-            <li>Improved relationships</li>
-            <li>Increased personal strength</li>
-            <li>Recognition of new possibilities</li>
-            <li>Spiritual development</li>
-        </ul>
+            <p>Growth and distress can coexist. Experiencing growth doesn't mean you're "over" the trauma or that it wasn't that bad. You can be grateful for who you've become while still mourning what happened.</p>
+        </section>
 
-        <p>This isn't about being "grateful" for trauma or finding "silver linings." It's recognizing that surviving something terrible can—sometimes, for some people—lead to growth that wouldn't have happened otherwise.</p>
+        <section class="section">
+            <h2>Supporting a Loved One With PTSD</h2>
+            <p>If someone you care about has PTSD, here's how you can help:</p>
+            <ul>
+                <li><strong>Educate yourself</strong> — Understanding PTSD helps you respond with empathy</li>
+                <li><strong>Be patient</strong> — Recovery takes time; don't push for them to "move on"</li>
+                <li><strong>Listen without judgment</strong> — Let them share when they're ready; don't press for details</li>
+                <li><strong>Respect their triggers</strong> — Learn what triggers them and help create safe environments</li>
+                <li><strong>Encourage treatment</strong> — Support their engagement with evidence-based therapy</li>
+                <li><strong>Take care of yourself</strong> — Supporting someone with PTSD can be exhausting; get your own support</li>
+                <li><strong>Don't take symptoms personally</strong> — Irritability, withdrawal, and numbness are symptoms, not reflections of their love for you</li>
+            </ul>
+        </section>
 
-        <p>Not everyone experiences post-traumatic growth, and that's okay. Recovery itself is enough.</p>
+        <section class="section">
+            <h2>Life After PTSD</h2>
+            <p>Many people who complete treatment report that life after PTSD is different—sometimes better—than before. The trauma doesn't disappear, but its hold on you loosens. You can:</p>
+            <ul>
+                <li>Think about what happened without being overwhelmed</li>
+                <li>Go places and do things without constant fear</li>
+                <li>Sleep without nightmares</li>
+                <li>Feel connected to people you love</li>
+                <li>Experience joy, hope, and peace</li>
+                <li>Use what you've learned to help others</li>
+            </ul>
+            <p>Your trauma will always be part of your story. But with treatment, it becomes one chapter—not the whole book.</p>
+        </section>
 
-        <h2>When to Seek More Help</h2>
-        <p>Reach out to a professional if:</p>
-        <ul>
-            <li>Symptoms aren't improving or are getting worse</li>
-            <li>You're using alcohol or drugs to cope</li>
-            <li>You're having thoughts of suicide or self-harm</li>
-            <li>Relationships or work are significantly impacted</li>
-            <li>You want support but don't know where to start</li>
-        </ul>
-
-        <p>Asking for help isn't weakness—it's strategy. PTSD is treatable, and you don't have to figure this out alone.</p>
-
-        <div class="insight-box">
-            <h4>A Note on Patience</h4>
-            <p>You didn't develop PTSD overnight, and recovery takes time too. Be as patient with yourself as you would be with someone you love. You're healing from something that was genuinely terrible. That's hard work, and you're doing it.</p>
-        </div>
-    </article>
+    </main>
 
     <footer>
         <div class="footer-inner">
-            <p>© 2026 ptsd.md · Part of the <a href="https://thrive.md">thrive.md</a> health network</p>
-            <p style="margin-top: 12px; font-size: 12px;">This website provides general health information. It is not a substitute for professional mental health treatment.</p>
+            <p>© 2026 ptsd.md · Part of <a href="https://thrive.md" style="color: var(--accent); text-decoration: none;">thrive.md</a></p>
+            <p style="margin-top: 8px; font-size: 12px;">Information based on clinical research and trauma recovery literature. Always work with a mental health professional for personalized guidance.</p>
         </div>
     </footer>
-<p style="text-align:center;color:#64748b;font-size:12px;padding:20px;">Last reviewed: February 2026</p></body>
+</body>
 </html>

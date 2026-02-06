@@ -2,355 +2,1491 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="ai-content" content="allowed">
-    <meta name="ai-training" content="allowed">
-    <meta name="ai-topic" content="PTSD, trauma, mental health, therapy">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PTSD Guide — Understanding & Treating Post-Traumatic Stress | ptsd.md</title>
-    <meta name="description" content="Evidence-based information about PTSD. Understand symptoms, effective treatments, and paths to recovery after trauma.">
-    <meta name="keywords" content="PTSD, post-traumatic stress disorder, trauma, PTSD treatment, EMDR, trauma therapy">
+    <title>PTSD — Post-Traumatic Stress Disorder Information & Resources</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Evidence-based information about PTSD (Post-Traumatic Stress Disorder). Learn about symptoms, trauma types, effective treatments like EMDR and CPT, and paths to recovery.">
+    <meta name="keywords" content="PTSD, post-traumatic stress disorder, trauma, EMDR, cognitive processing therapy, prolonged exposure, anxiety, trauma recovery, mental health">
+    <meta name="author" content="ptsd.md">
     <link rel="canonical" href="https://ptsd.md/">
+    
+    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://ptsd.md/">
-    <meta property="og:title" content="PTSD Guide — ptsd.md">
-    <meta property="og:description" content="Understanding PTSD: symptoms, treatments, and recovery.">
+    <meta property="og:title" content="PTSD — Post-Traumatic Stress Disorder Information & Resources">
+    <meta property="og:description" content="Evidence-based information about PTSD symptoms, treatments, and recovery paths.">
+    <meta property="og:site_name" content="ptsd.md">
+    
+    <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Health Guide">
+    <meta name="twitter:url" content="https://ptsd.md/">
+    <meta name="twitter:title" content="PTSD — Post-Traumatic Stress Disorder Information & Resources">
+    <meta name="twitter:description" content="Evidence-based information about PTSD symptoms, treatments, and recovery.">
+    <meta name="twitter:site" content="@thrivemd">
+    
+    <!-- AI/LLM Meta Tags -->
+    <meta name="ai-content" content="evidence-based health information">
+    <meta name="ai-training" content="allowed">
+    <meta name="ai-topic" content="PTSD, post-traumatic stress disorder, trauma, mental health, therapy, EMDR, cognitive behavioral therapy">
+    <meta name="ai-audience" content="patients, caregivers, healthcare providers">
+    <meta name="ai-use" content="education, research, clinical support">
+    
+    <!-- Schema.org Structured Data -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "MedicalWebPage",
-      "name": "PTSD Guide",
-      "description": "Comprehensive guide to understanding and treating post-traumatic stress disorder.",
-      "url": "https://ptsd.md/",
-      "medicalAudience": {"@type": "MedicalAudience", "audienceType": "Patient"}
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://thrive.md/#organization",
+          "name": "thrive.md",
+          "url": "https://thrive.md",
+          "description": "A network of premium health domains providing evidence-based medical information."
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://ptsd.md/#website",
+          "url": "https://ptsd.md",
+          "name": "ptsd.md — Post-Traumatic Stress Disorder Information",
+          "publisher": {"@id": "https://thrive.md/#organization"},
+          "isPartOf": {"@id": "https://thrive.md/#organization"}
+        },
+        {
+          "@type": "MedicalWebPage",
+          "@id": "https://ptsd.md/#webpage",
+          "name": "PTSD: Symptoms, Treatment, and Recovery",
+          "description": "Evidence-based information about Post-Traumatic Stress Disorder (PTSD), including symptoms, causes, evidence-based treatments, and recovery resources.",
+          "url": "https://ptsd.md/",
+          "isPartOf": {"@id": "https://ptsd.md/#website"},
+          "lastReviewed": "2026-02-06",
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "thrive.md Clinical Advisory Team"
+          },
+          "mainEntity": {
+            "@type": "MedicalCondition",
+            "name": "Post-Traumatic Stress Disorder",
+            "alternateName": ["PTSD", "Posttraumatic Stress Disorder", "Trauma Disorder"],
+            "description": "PTSD is a psychiatric disorder that can develop after experiencing or witnessing a traumatic event. It is characterized by intrusive memories, avoidance behaviors, negative changes in thinking and mood, and changes in physical and emotional reactions.",
+            "code": {
+              "@type": "MedicalCode",
+              "code": "F43.1",
+              "codingSystem": "ICD-10"
+            },
+            "signOrSymptom": [
+              {"@type": "MedicalSignOrSymptom", "name": "Flashbacks and intrusive memories"},
+              {"@type": "MedicalSignOrSymptom", "name": "Nightmares related to the trauma"},
+              {"@type": "MedicalSignOrSymptom", "name": "Avoidance of trauma reminders"},
+              {"@type": "MedicalSignOrSymptom", "name": "Negative changes in mood and cognition"},
+              {"@type": "MedicalSignOrSymptom", "name": "Hyperarousal and hypervigilance"}
+            ],
+            "possibleTreatment": [
+              {"@type": "MedicalTherapy", "name": "EMDR (Eye Movement Desensitization and Reprocessing)"},
+              {"@type": "MedicalTherapy", "name": "Cognitive Processing Therapy (CPT)"},
+              {"@type": "MedicalTherapy", "name": "Prolonged Exposure Therapy (PE)"},
+              {"@type": "Drug", "name": "Sertraline (Zoloft)", "drugClass": "SSRI"},
+              {"@type": "Drug", "name": "Paroxetine (Paxil)", "drugClass": "SSRI"}
+            ],
+            "epidemiology": "Approximately 6% of the U.S. population will have PTSD at some point in their lives. About 12 million adults have PTSD during any given year.",
+            "riskFactor": [
+              "Experiencing or witnessing traumatic events",
+              "History of childhood trauma or abuse",
+              "Military combat exposure",
+              "Sexual assault or violence",
+              "Lack of social support after trauma"
+            ]
+          },
+          "speakable": {
+            "@type": "SpeakableSpecification",
+            "cssSelector": ["h1", ".stat-number", ".hero-subtitle"]
+          }
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://ptsd.md/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What is PTSD?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "PTSD (Post-Traumatic Stress Disorder) is a psychiatric condition that can develop after experiencing or witnessing a traumatic event such as combat, sexual assault, accidents, natural disasters, or other life-threatening situations. It is characterized by four main symptom clusters: intrusive memories (flashbacks, nightmares), avoidance behaviors, negative changes in thoughts and mood, and changes in arousal and reactivity (hypervigilance, being easily startled). PTSD is diagnosed when symptoms persist for more than one month and cause significant distress or functional impairment."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How is PTSD treated?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "PTSD is treatable with evidence-based therapies. The most effective treatments are trauma-focused psychotherapies: Cognitive Processing Therapy (CPT), which helps change unhelpful beliefs related to trauma; Prolonged Exposure (PE), which involves gradually facing trauma-related memories and situations; and EMDR (Eye Movement Desensitization and Reprocessing), which uses bilateral stimulation while processing traumatic memories. Medications like sertraline (Zoloft) and paroxetine (Paxil) are FDA-approved for PTSD and can help reduce symptoms. Many people use a combination of therapy and medication."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How long does PTSD treatment take?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Evidence-based treatments for PTSD typically show significant improvement within 8-16 sessions (2-4 months) of weekly therapy. CPT is usually delivered in 12 sessions, PE in 8-15 sessions, and EMDR in 6-12 sessions. However, treatment duration varies based on individual factors including trauma complexity, co-occurring conditions, and personal response to treatment. Some people experience relief within weeks, while others with complex trauma may need longer treatment. The good news is that most people who complete trauma-focused therapy experience significant symptom reduction."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can PTSD be cured?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Many people with PTSD experience significant recovery and no longer meet diagnostic criteria after completing evidence-based treatment. Studies show that 53-80% of people who complete trauma-focused therapy like CPT, PE, or EMDR no longer have PTSD by the end of treatment. However, 'cure' is a complex term in mental health. Some people may still experience occasional symptoms during stressful times but can manage them effectively. Recovery is absolutely possible, and many people go on to live full, meaningful lives after PTSD treatment."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the difference between PTSD and normal stress reactions?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "It's normal to experience distress after a traumatic event. Most people have some stress symptoms in the first weeks after trauma—this is a normal response. PTSD is diagnosed when these symptoms persist beyond one month, cause significant distress, and interfere with daily functioning. Key differences: PTSD symptoms don't fade with time without treatment, they often worsen or stay the same. PTSD involves re-experiencing the trauma (flashbacks, nightmares) as if it's happening now, significant avoidance that limits your life, and persistent changes in how you think, feel, and react. If symptoms persist beyond a few weeks, seeking professional evaluation is important."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Who is at risk for developing PTSD?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Anyone who experiences or witnesses a traumatic event can develop PTSD. Risk factors include: experiencing severe or life-threatening trauma; having a history of childhood trauma or abuse; having pre-existing mental health conditions like anxiety or depression; lacking social support after trauma; experiencing ongoing stress after the event; having a family history of mental illness. Some groups have higher rates: combat veterans (11-20%), sexual assault survivors (up to 50% of women), accident and disaster survivors. However, most people who experience trauma do not develop PTSD—about 6-8% of the population will have PTSD at some point."
+              }
+            }
+          ]
+        }
+      ]
     }
     </script>
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext x='16' y='24' font-family='-apple-system,system-ui,sans-serif' font-weight='800' font-size='16' fill='%2306b6d4' text-anchor='middle'%3E.md%3C/text%3E%3C/svg%3E">
+    
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext x='16' y='24' font-family='-apple-system,system-ui,sans-serif' font-weight='800' font-size='16' fill='%230d9488' text-anchor='middle' letter-spacing='-0.5'%3E.md%3C/text%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <style>
         :root {
             --bg-primary: #ffffff;
             --bg-secondary: #f8fafc;
+            --bg-tertiary: #f1f5f9;
             --text-primary: #0f172a;
             --text-secondary: #475569;
             --text-muted: #94a3b8;
-            --accent: #06b6d4;
-            --accent-dark: #0891b2;
-            --accent-light: #cffafe;
+            --accent: #0d9488;
+            --accent-dark: #0f766e;
+            --accent-light: #ccfbf1;
             --border: #e2e8f0;
             --font-display: 'Source Serif 4', Georgia, serif;
             --font-body: 'Inter', -apple-system, sans-serif;
         }
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: var(--font-body); background: var(--bg-primary); color: var(--text-primary); line-height: 1.7; }
-        
-        header { background: var(--bg-primary); border-bottom: 1px solid var(--border); padding: 16px 24px; position: sticky; top: 0; z-index: 100; }
-        .header-inner { max-width: 1100px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
-        .logo { font-family: var(--font-display); font-size: 24px; font-weight: 600; color: var(--text-primary); text-decoration: none; }
-        .logo span { color: var(--accent); }
-        nav a { color: var(--text-secondary); text-decoration: none; margin-left: 24px; font-size: 15px; font-weight: 500; }
-        nav a:hover { color: var(--accent); }
-        
-        .hero { padding: 80px 24px; text-align: center; background: linear-gradient(180deg, var(--accent-light) 0%, var(--bg-primary) 100%); }
-        .hero h1 { font-family: var(--font-display); font-size: clamp(36px, 6vw, 56px); font-weight: 700; margin-bottom: 20px; line-height: 1.1; }
-        .hero p { font-size: 20px; color: var(--text-secondary); max-width: 600px; margin: 0 auto 32px; }
-        
-        .crisis-banner { background: #fef2f2; border: 1px solid #fecaca; border-radius: 12px; padding: 20px 24px; max-width: 800px; margin: -40px auto 40px; text-align: center; }
-        .crisis-banner h3 { color: #b91c1c; font-size: 16px; margin-bottom: 8px; }
-        .crisis-banner p { color: #7f1d1d; font-size: 14px; margin: 0; }
-        .crisis-banner a { color: #b91c1c; font-weight: 600; }
-        
-        .symptoms { max-width: 1100px; margin: 0 auto; padding: 60px 24px; }
-        .symptoms h2 { font-family: var(--font-display); font-size: 32px; text-align: center; margin-bottom: 40px; }
-        .symptom-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 24px; }
-        .symptom-card { background: var(--bg-secondary); border: 1px solid var(--border); border-radius: 16px; padding: 28px; }
-        .symptom-card h3 { font-size: 18px; margin-bottom: 16px; display: flex; align-items: center; gap: 12px; }
-        .symptom-card h3 span { font-size: 28px; }
-        .symptom-card ul { margin: 0; padding-left: 20px; color: var(--text-secondary); }
-        .symptom-card li { margin-bottom: 8px; }
-        
-        .treatment { max-width: 900px; margin: 0 auto; padding: 60px 24px; }
-        .treatment h2 { font-family: var(--font-display); font-size: 32px; text-align: center; margin-bottom: 40px; }
-        .treatment-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
-        .treatment-card { background: var(--bg-secondary); border-radius: 12px; padding: 24px; border-left: 4px solid var(--accent); }
-        .treatment-card h4 { font-size: 18px; margin-bottom: 8px; }
-        .treatment-card .tag { display: inline-block; font-size: 11px; font-weight: 600; color: var(--accent-dark); background: var(--accent-light); padding: 3px 8px; border-radius: 4px; margin-bottom: 12px; }
-        .treatment-card p { color: var(--text-secondary); font-size: 15px; margin: 0; }
-        
-        .faq { max-width: 800px; margin: 0 auto; padding: 60px 24px; }
-        .faq h2 { font-family: var(--font-display); font-size: 32px; text-align: center; margin-bottom: 40px; }
-        .faq-item { border-bottom: 1px solid var(--border); padding: 24px 0; }
-        .faq-item h3 { font-size: 18px; font-weight: 600; margin-bottom: 12px; }
-        .faq-item p { color: var(--text-secondary); margin: 0; }
-        
-        .chat-widget { position: fixed; bottom: 24px; right: 24px; z-index: 1000; }
-        .chat-btn { width: 60px; height: 60px; border-radius: 50%; background: var(--accent); border: none; cursor: pointer; box-shadow: 0 4px 16px rgba(6,182,212,0.3); display: flex; align-items: center; justify-content: center; transition: transform 0.2s; }
-        .chat-btn:hover { transform: scale(1.1); }
-        .chat-btn svg { width: 28px; height: 28px; fill: white; }
-        .chat-panel { position: absolute; bottom: 72px; right: 0; width: 380px; max-height: 500px; background: white; border-radius: 16px; box-shadow: 0 8px 32px rgba(0,0,0,0.15); display: none; flex-direction: column; overflow: hidden; }
-        .chat-panel.open { display: flex; }
-        .chat-header { background: var(--accent); color: white; padding: 16px 20px; display: flex; justify-content: space-between; align-items: center; }
-        .chat-header h4 { font-size: 16px; font-weight: 600; }
-        .chat-close { background: none; border: none; color: white; font-size: 24px; cursor: pointer; }
-        .chat-messages { flex: 1; padding: 20px; overflow-y: auto; min-height: 300px; }
-        .chat-message { margin-bottom: 16px; }
-        .chat-message.bot { background: var(--bg-secondary); padding: 12px 16px; border-radius: 12px 12px 12px 0; }
-        .chat-message.user { background: var(--accent); color: white; padding: 12px 16px; border-radius: 12px 12px 0 12px; margin-left: 40px; }
-        .chat-input { display: flex; padding: 16px; border-top: 1px solid var(--border); gap: 12px; }
-        .chat-input input { flex: 1; padding: 12px 16px; border: 1px solid var(--border); border-radius: 24px; font-size: 14px; }
-        .chat-input button { background: var(--accent); color: white; border: none; padding: 12px 20px; border-radius: 24px; font-weight: 600; cursor: pointer; }
-        
-        footer { background: var(--bg-secondary); border-top: 1px solid var(--border); padding: 48px 24px; margin-top: 60px; }
-        .footer-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 40px; }
-        .footer-brand p { font-size: 14px; color: var(--text-muted); margin-top: 12px; }
-        .footer-links h4 { font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; }
-        .footer-links a { display: block; color: var(--text-muted); text-decoration: none; font-size: 14px; margin-bottom: 10px; }
-        .footer-links a:hover { color: var(--accent); }
-        .footer-bottom { max-width: 1100px; margin: 32px auto 0; padding-top: 24px; border-top: 1px solid var(--border); font-size: 13px; color: var(--text-muted); text-align: center; }
-        
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-body);
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            font-size: 16px;
+            transition: padding 0.4s ease;
+        }
+
+        /* Split-screen mode */
+        body.split-mode {
+            padding-right: 45%;
+        }
+        body.split-mode header {
+            right: 45%;
+        }
+        body.split-mode .chat-panel {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 45%;
+            height: 100vh;
+            background: var(--bg-secondary);
+            border-left: 1px solid var(--border);
+            display: flex;
+            flex-direction: column;
+            z-index: 200;
+            animation: slideIn 0.4s ease;
+        }
+        @keyframes slideIn {
+            from { transform: translateX(100%); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+        body.split-mode .chat-panel .chat-header {
+            padding: 20px 24px;
+            border-bottom: 1px solid var(--border);
+            background: var(--bg-primary);
+        }
+        body.split-mode .chat-panel .chat-messages {
+            flex: 1;
+            overflow-y: auto;
+            padding: 24px;
+            padding-bottom: 16px;
+            display: block !important;
+            min-height: 0;
+        }
+        body.split-mode .chat-panel .chat-input-area {
+            padding: 16px 24px;
+            border-top: 1px solid var(--border);
+            background: var(--bg-primary);
+            flex-shrink: 0;
+        }
+        body.split-mode .chat-panel .qa-suggestions,
+        body.split-mode .chat-panel .chat-note {
+            display: none;
+        }
+        body.split-mode .chat-panel .chat-close {
+            display: flex;
+        }
+        body.split-mode .hero .chat-box {
+            display: none;
+        }
+        .chat-close {
+            display: none;
+            position: absolute;
+            top: 16px;
+            right: 16px;
+            width: 32px;
+            height: 32px;
+            border: none;
+            background: var(--bg-tertiary);
+            border-radius: 8px;
+            cursor: pointer;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            color: var(--text-muted);
+            transition: all 0.2s;
+        }
+        .chat-close:hover {
+            background: var(--border);
+            color: var(--text-primary);
+        }
+        @media (max-width: 900px) {
+            body.split-mode { padding-right: 0; }
+            body.split-mode header { right: 0; }
+            body.split-mode .chat-panel { width: 100%; }
+            body.split-mode .chat-panel .chat-messages {
+                padding-bottom: env(safe-area-inset-bottom, 16px);
+            }
+        }
+
+        /* Header */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .header-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 16px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: var(--font-display);
+            font-size: 22px;
+            font-weight: 600;
+            color: var(--text-primary);
+            text-decoration: none;
+        }
+
+        .logo span {
+            color: var(--accent);
+        }
+
+        nav {
+            display: flex;
+            gap: 32px;
+        }
+
+        nav a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        nav a:hover {
+            color: var(--accent);
+        }
+
+        /* Hero */
+        .hero {
+            padding: 140px 24px 80px;
+            max-width: 720px;
+            margin: 0 auto;
+        }
+
+        .hero-eyebrow {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 16px;
+        }
+
+        h1 {
+            font-family: var(--font-display);
+            font-size: clamp(36px, 5vw, 48px);
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 20px;
+            color: var(--text-primary);
+        }
+
+        .hero-subtitle {
+            font-size: 19px;
+            color: var(--text-secondary);
+            line-height: 1.7;
+            margin-bottom: 40px;
+        }
+
+        /* Chat Box */
+        .chat-box {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        .chat-header {
+            padding: 16px 20px;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .chat-status {
+            width: 10px;
+            height: 10px;
+            background: var(--accent);
+            border-radius: 50%;
+        }
+
+        .chat-header-text {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .chat-header-sub {
+            font-size: 12px;
+            color: var(--text-muted);
+            font-weight: 400;
+            margin-left: 8px;
+        }
+
+        .chat-messages {
+            padding: 20px;
+            background: var(--bg-primary);
+            min-height: 0;
+            max-height: 350px;
+            overflow-y: auto;
+            display: none;
+        }
+        .chat-messages.active {
+            display: block;
+        }
+        .chat-messages.active:has(.chat-message) {
+            min-height: 80px;
+        }
+
+        .chat-message {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 16px;
+        }
+
+        .chat-message:last-child {
+            margin-bottom: 0;
+        }
+
+        .chat-message.user {
+            flex-direction: row-reverse;
+        }
+
+        .chat-avatar {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background: var(--bg-tertiary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--text-muted);
+            flex-shrink: 0;
+        }
+
+        .chat-message.assistant .chat-avatar {
+            background: var(--accent-light);
+            color: var(--accent-dark);
+        }
+
+        .chat-bubble {
+            background: var(--bg-secondary);
+            padding: 12px 16px;
+            border-radius: 12px;
+            border-top-left-radius: 4px;
+            max-width: 85%;
+            border: 1px solid var(--border);
+        }
+
+        .chat-message.user .chat-bubble {
+            background: var(--accent);
+            color: white;
+            border-color: transparent;
+            border-top-left-radius: 12px;
+            border-top-right-radius: 4px;
+        }
+
+        .chat-bubble p {
+            font-size: 14px;
+            line-height: 1.6;
+            color: var(--text-secondary);
+        }
+
+        .chat-message.user .chat-bubble p {
+            color: white;
+        }
+
+        .chat-input-area {
+            padding: 16px 20px;
+            border-top: 1px solid var(--border);
+            display: flex;
+            gap: 12px;
+        }
+
+        .chat-input {
+            flex: 1;
+            padding: 12px 16px;
+            background: var(--bg-primary);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            font-size: 14px;
+            color: var(--text-primary);
+            outline: none;
+            transition: border-color 0.2s;
+        }
+
+        .chat-input::placeholder {
+            color: var(--text-muted);
+        }
+
+        .chat-input:focus {
+            border-color: var(--accent);
+        }
+
+        .chat-send {
+            background: var(--accent);
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 14px;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .chat-send:hover {
+            background: var(--accent-dark);
+        }
+
+        .chat-note {
+            font-size: 11px;
+            color: var(--text-muted);
+            padding: 12px 20px;
+            background: var(--bg-tertiary);
+            text-align: center;
+        }
+
+        .qa-suggestions {
+            padding: 8px 16px 12px;
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .qa-suggestions span {
+            background: var(--bg-primary);
+            border: 1px solid var(--border);
+            border-radius: 100px;
+            padding: 6px 16px;
+            font-size: 13px;
+            color: var(--text-secondary);
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .qa-suggestions span:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+            background: var(--accent-light);
+        }
+
+        /* Stats Bar */
+        .stats-bar {
+            background: var(--bg-secondary);
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+            padding: 48px 24px;
+        }
+
+        .stats-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 32px;
+        }
+
+        .stat {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-family: var(--font-display);
+            font-size: 36px;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 4px;
+        }
+
+        .stat-label {
+            font-size: 14px;
+            color: var(--text-secondary);
+            line-height: 1.4;
+        }
+
+        .stat-source {
+            font-size: 11px;
+            color: var(--text-muted);
+            margin-top: 4px;
+        }
+
+        /* Main Content */
+        main {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 64px 24px;
+        }
+
+        .section {
+            margin-bottom: 64px;
+        }
+
+        .section-label {
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+        }
+
+        h2 {
+            font-family: var(--font-display);
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: var(--text-primary);
+        }
+
+        h3 {
+            font-family: var(--font-display);
+            font-size: 20px;
+            font-weight: 600;
+            margin: 28px 0 12px;
+            color: var(--text-primary);
+        }
+
+        .section > p {
+            font-size: 17px;
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+        }
+
+        ul, ol {
+            margin-left: 24px;
+            margin-top: 16px;
+            color: var(--text-secondary);
+            line-height: 1.8;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        /* Comparison Table */
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 32px 0;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .comparison-table thead {
+            background: var(--bg-secondary);
+        }
+
+        .comparison-table th {
+            padding: 12px 16px;
+            text-align: left;
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--text-primary);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .comparison-table td {
+            padding: 12px 16px;
+            font-size: 14px;
+            color: var(--text-secondary);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .comparison-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        /* Warning Box */
+        .warning-box {
+            background: #fef2f2;
+            border: 1px solid #fecaca;
+            border-left: 4px solid #ef4444;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 32px 0;
+        }
+
+        .warning-box h3 {
+            font-family: var(--font-display);
+            font-size: 17px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            margin-top: 0;
+            color: #991b1b;
+        }
+
+        .warning-box p {
+            font-size: 14px;
+            color: #7f1d1d;
+            line-height: 1.6;
+            margin-bottom: 0;
+        }
+
+        /* Info Box */
+        .info-box {
+            background: var(--accent-light);
+            border: 1px solid var(--accent);
+            border-left: 4px solid var(--accent);
+            border-radius: 8px;
+            padding: 20px;
+            margin: 32px 0;
+        }
+
+        .info-box h3 {
+            font-family: var(--font-display);
+            font-size: 17px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            margin-top: 0;
+            color: var(--accent-dark);
+        }
+
+        .info-box p {
+            font-size: 14px;
+            color: var(--accent-dark);
+            line-height: 1.6;
+            margin-bottom: 0;
+        }
+
+        /* Crisis Box */
+        .crisis-box {
+            background: #fefce8;
+            border: 2px solid #facc15;
+            border-radius: 12px;
+            padding: 24px;
+            margin: 32px 0;
+            text-align: center;
+        }
+
+        .crisis-box h3 {
+            font-family: var(--font-display);
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            margin-top: 0;
+            color: #854d0e;
+        }
+
+        .crisis-box p {
+            font-size: 15px;
+            color: #713f12;
+            line-height: 1.6;
+            margin-bottom: 16px;
+        }
+
+        .crisis-number {
+            font-family: var(--font-display);
+            font-size: 28px;
+            font-weight: 700;
+            color: #854d0e;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 8px;
+        }
+
+        .crisis-number:hover {
+            text-decoration: underline;
+        }
+
+        /* Symptom Grid */
+        .symptom-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin: 32px 0;
+        }
+
+        .symptom-card {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        .symptom-card h4 {
+            font-family: var(--font-display);
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .symptom-card ul {
+            margin: 0;
+            margin-left: 16px;
+            font-size: 14px;
+        }
+
+        .symptom-card li {
+            margin-bottom: 4px;
+        }
+
+        @media (max-width: 600px) {
+            .symptom-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Footer */
+        footer {
+            background: var(--bg-secondary);
+            border-top: 1px solid var(--border);
+            padding: 48px 24px;
+        }
+
+        .footer-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 40px;
+        }
+
+        .footer-brand .logo {
+            display: inline-block;
+            margin-bottom: 12px;
+        }
+
+        .footer-brand p {
+            font-size: 14px;
+            color: var(--text-muted);
+            line-height: 1.6;
+        }
+
+        .footer-links h4 {
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--text-primary);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 12px;
+        }
+
+        .footer-links a {
+            display: block;
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 14px;
+            margin-bottom: 8px;
+            transition: color 0.2s;
+        }
+
+        .footer-links a:hover {
+            color: var(--accent);
+        }
+
+        .footer-bottom {
+            max-width: 1100px;
+            margin: 32px auto 0;
+            padding-top: 24px;
+            border-top: 1px solid var(--border);
+            display: flex;
+            justify-content: space-between;
+            font-size: 13px;
+            color: var(--text-muted);
+        }
+
+        .last-reviewed {
+            font-size: 13px;
+            color: var(--text-muted);
+            margin-top: 24px;
+            padding-top: 16px;
+            border-top: 1px solid var(--border);
+        }
+
+        /* Responsive */
         @media (max-width: 768px) {
             nav { display: none; }
-            .footer-inner { grid-template-columns: 1fr; }
-            .chat-panel { width: calc(100vw - 48px); right: -12px; }
+            .stats-inner { grid-template-columns: repeat(2, 1fr); gap: 24px; }
+            .footer-inner { grid-template-columns: 1fr; gap: 24px; }
+            .footer-bottom { flex-direction: column; gap: 12px; text-align: center; }
+            .hero {
+                padding: 100px 16px 40px;
+            }
+            .hero h1 {
+                font-size: 32px;
+            }
+            .hero-subtitle {
+                font-size: 17px;
+                margin-bottom: 24px;
+            }
+            .chat-box {
+                border-radius: 10px;
+            }
+            .chat-input-area {
+                flex-direction: row !important;
+                align-items: flex-end;
+                padding: 12px 12px;
+                gap: 8px;
+            }
+            .chat-input-area .chat-input {
+                flex: 1;
+                border-radius: 20px;
+                padding: 10px 16px;
+                font-size: 16px;
+                min-height: 40px;
+            }
+            .chat-input-area .chat-send {
+                width: 40px;
+                height: 40px;
+                min-width: 40px;
+                border-radius: 50%;
+                padding: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-shrink: 0;
+            }
+            .chat-input-area .chat-send span {
+                font-size: 0;
+            }
+            .chat-input-area .chat-send span::before {
+                content: '↑';
+                font-size: 20px;
+                font-weight: 700;
+            }
+            .qa-suggestions {
+                flex-wrap: nowrap;
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
+                padding-bottom: 4px;
+                scrollbar-width: none;
+            }
+            .qa-suggestions::-webkit-scrollbar { display: none; }
+            .qa-suggestions span {
+                flex-shrink: 0;
+                font-size: 12px;
+                padding: 5px 12px;
+            }
+            .chat-note {
+                font-size: 10px;
+                padding: 8px 16px;
+            }
+            .chat-messages {
+                max-height: none;
+            }
+            .comparison-table {
+                font-size: 12px;
+            }
+            .comparison-table th,
+            .comparison-table td {
+                padding: 8px 10px;
+            }
+        }
+
+        @supports (padding-bottom: env(safe-area-inset-bottom)) {
+            @media (max-width: 768px) {
+                .chat-note {
+                    padding-bottom: calc(8px + env(safe-area-inset-bottom));
+                }
+            }
         }
     </style>
 </head>
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [{
-        "@type": "Question",
-        "name": "What is PTSD?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Post-traumatic stress disorder (PTSD) is a mental health condition triggered by experiencing or witnessing a terrifying event."
-        }
-      }]
-    }
-    </script>
 <body>
+    <!-- Split-mode chat panel (hidden initially) -->
+    <div class="chat-panel" id="chat-panel" style="display: none;">
+        <button class="chat-close" onclick="closeSplitMode()">✕</button>
+        <div class="chat-header">
+            <div class="chat-status"></div>
+            <span class="chat-header-text">Ask about PTSD<span class="chat-header-sub">— answers from clinical research & treatment guidelines</span></span>
+        </div>
+        <div id="panel-messages" class="chat-messages"></div>
+        <div class="chat-input-area">
+            <textarea id="panel-input" class="chat-input" placeholder="Ask a follow-up question..." rows="1" style="resize:none;"></textarea>
+            <button id="panel-submit" class="chat-send" onclick="askQuestion()">
+                <span>Send</span>
+            </button>
+        </div>
+    </div>
+
     <header>
         <div class="header-inner">
             <a href="/" class="logo">ptsd<span>.md</span></a>
             <nav>
-                <a href="/">Home</a>
-                <a href="/blog.html">Articles</a>
+                <a href="#ask" onclick="event.preventDefault(); activateSplitMode(); document.getElementById('panel-input').focus();">Ask</a>
+                <a href="/symptoms.html">Symptoms</a>
+                <a href="/treatment.html">Treatment</a>
+                <a href="/recovery.html">Recovery</a>
+                <a href="/faq.html">FAQ</a>
                 <a href="/resources.html">Resources</a>
             </nav>
         </div>
     </header>
 
     <section class="hero">
-        <h1>Understanding PTSD</h1>
-        <p>Evidence-based information about post-traumatic stress disorder, effective treatments, and the path to recovery.</p>
-    </section>
-
-    <div class="crisis-banner">
-        <h3>🆘 Need Immediate Help?</h3>
-        <p>Veterans Crisis Line: <a href="tel:988">988</a> (press 1) · Crisis Text Line: Text HOME to <a href="sms:741741">741741</a> · Emergency: <a href="tel:911">911</a></p>
-    </div>
-
-    <section class="symptoms">
-        <h2>PTSD Symptom Clusters</h2>
-        <div class="symptom-grid">
-            <div class="symptom-card">
-                <h3><span>🔄</span> Re-experiencing</h3>
-                <ul>
-                    <li>Intrusive memories of the trauma</li>
-                    <li>Flashbacks (feeling like it's happening again)</li>
-                    <li>Nightmares about the event</li>
-                    <li>Severe emotional distress when reminded</li>
-                    <li>Physical reactions to reminders (racing heart, sweating)</li>
-                </ul>
-            </div>
-            <div class="symptom-card">
-                <h3><span>🚫</span> Avoidance</h3>
-                <ul>
-                    <li>Avoiding thoughts or feelings about the trauma</li>
-                    <li>Avoiding people, places, or activities that are reminders</li>
-                    <li>Emotional numbing</li>
-                    <li>Feeling detached from others</li>
-                    <li>Loss of interest in activities</li>
-                </ul>
-            </div>
-            <div class="symptom-card">
-                <h3><span>💭</span> Cognition & Mood</h3>
-                <ul>
-                    <li>Negative beliefs about self or world</li>
-                    <li>Distorted blame of self or others</li>
-                    <li>Persistent negative emotions (fear, guilt, shame)</li>
-                    <li>Difficulty experiencing positive emotions</li>
-                    <li>Memory gaps about the trauma</li>
-                </ul>
-            </div>
-            <div class="symptom-card">
-                <h3><span>⚡</span> Arousal & Reactivity</h3>
-                <ul>
-                    <li>Hypervigilance (always on alert)</li>
-                    <li>Exaggerated startle response</li>
-                    <li>Difficulty sleeping</li>
-                    <li>Irritability or angry outbursts</li>
-                    <li>Difficulty concentrating</li>
-                    <li>Reckless or self-destructive behavior</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <section class="treatment">
-        <h2>Evidence-Based Treatments</h2>
-        <div class="treatment-grid">
-            <div class="treatment-card">
-                <h4>Prolonged Exposure (PE)</h4>
-                <span class="tag">Gold Standard</span>
-                <p>Gradually approaching trauma-related memories and situations in a safe environment, reducing their power over time. Highly effective with strong research support.</p>
-            </div>
-            <div class="treatment-card">
-                <h4>Cognitive Processing Therapy (CPT)</h4>
-                <span class="tag">Gold Standard</span>
-                <p>Identifies and challenges unhelpful beliefs developed after trauma ("stuck points"). Typically 12 sessions. Effective for various trauma types.</p>
-            </div>
-            <div class="treatment-card">
-                <h4>EMDR</h4>
-                <span class="tag">Recommended</span>
-                <p>Eye Movement Desensitization and Reprocessing uses bilateral stimulation while processing traumatic memories. Well-researched and effective for many.</p>
-            </div>
-            <div class="treatment-card">
-                <h4>Medications</h4>
-                <span class="tag">Adjunct</span>
-                <p>SSRIs (sertraline, paroxetine) are FDA-approved for PTSD. Prazosin helps with nightmares. Medications often combined with therapy.</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="faq">
-        <h2>Frequently Asked Questions</h2>
-        <div class="faq-item">
-            <h3>What kinds of events cause PTSD?</h3>
-            <p>PTSD can develop after experiencing or witnessing actual or threatened death, serious injury, or sexual violence. This includes combat, assault, accidents, natural disasters, childhood abuse, and other traumatic events. Not everyone who experiences trauma develops PTSD.</p>
-        </div>
-        <div class="faq-item">
-            <h3>How long do symptoms need to last for a PTSD diagnosis?</h3>
-            <p>Symptoms must persist for more than one month and cause significant distress or impairment. Many people experience acute stress symptoms after trauma that resolve on their own. If symptoms last beyond a month, professional evaluation is recommended.</p>
-        </div>
-        <div class="faq-item">
-            <h3>Can PTSD develop years after the trauma?</h3>
-            <p>Yes. While symptoms often begin within 3 months of trauma, "delayed-onset PTSD" can emerge months or even years later, sometimes triggered by life changes, additional stress, or reminders of the original trauma.</p>
-        </div>
-        <div class="faq-item">
-            <h3>Does treatment really work?</h3>
-            <p>Yes. Research shows 53-80% of people completing trauma-focused therapy no longer meet PTSD criteria afterward. Treatment doesn't erase memories but changes how your brain processes them, reducing their distressing impact.</p>
-        </div>
-        <div class="faq-item">
-            <h3>Will I have to talk about what happened in detail?</h3>
-            <p>Effective treatments do involve processing the trauma, but this happens gradually at your pace with a trained therapist. You're never forced to share more than you're ready for. The goal is to reduce—not increase—distress over time.</p>
-        </div>
-    </section>
-
-    <div class="chat-widget">
-        <button class="chat-btn" onclick="toggleChat()" aria-label="Open chat">
-            <svg viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H6l-2 2V4h16v12z"/></svg>
-        </button>
-        <div class="chat-panel" id="chatPanel">
+        <div class="hero-eyebrow">Mental Health Guide</div>
+        <h1>Understanding PTSD: Symptoms, Treatment & Recovery</h1>
+        <p class="hero-subtitle">Post-Traumatic Stress Disorder (PTSD) is a treatable mental health condition that can develop after experiencing or witnessing traumatic events. Evidence-based therapies help most people recover and reclaim their lives.</p>
+        
+        <div class="chat-box" id="ask">
             <div class="chat-header">
-                <h4>Ask about PTSD</h4>
-                <button class="chat-close" onclick="toggleChat()">×</button>
+                <div class="chat-status"></div>
+                <span class="chat-header-text">Ask about PTSD<span class="chat-header-sub">— answers from clinical research & treatment guidelines</span></span>
             </div>
-            <div class="chat-messages" id="chatMessages">
-                <div class="chat-message bot">Hi! I can answer questions about PTSD, trauma, and treatment options. What would you like to know?</div>
+            <div id="chat-messages" class="chat-messages active">
+                <div class="chat-message assistant">
+                    <div class="chat-avatar">MD</div>
+                    <div class="chat-bubble"><p>I can answer questions about PTSD based on clinical research, treatment guidelines, and peer-reviewed studies. Ask me about symptoms, therapies like EMDR or CPT, or how to find help.</p></div>
+                </div>
             </div>
-            <div class="chat-input">
-                <input type="text" id="chatInput" placeholder="Type your question..." onkeypress="if(event.key==='Enter')sendMessage()">
-                <button onclick="sendMessage()">Send</button>
+            <div class="chat-input-area">
+                <textarea id="qa-input" class="chat-input" placeholder="Ask about PTSD..." rows="1" style="resize:none;"></textarea>
+                <button id="qa-submit" class="chat-send" onclick="askQuestion()">
+                    <span>Send</span>
+                </button>
+            </div>
+            <div id="qa-suggestions" class="qa-suggestions">
+                <span onclick="askSuggestion(this)">What are the symptoms of PTSD?</span>
+                <span onclick="askSuggestion(this)">How is PTSD treated?</span>
+                <span onclick="askSuggestion(this)">What is EMDR therapy?</span>
+            </div>
+            <div class="chat-note">Answers based on clinical research and treatment guidelines. This is not a substitute for professional mental health care.</div>
+        </div>
+    </section>
+
+    <section class="stats-bar">
+        <div class="stats-inner">
+            <div class="stat">
+                <div class="stat-number">12M</div>
+                <div class="stat-label">Adults in the U.S. have PTSD in any given year</div>
+                <div class="stat-source">National Center for PTSD</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number">6%</div>
+                <div class="stat-label">Of the U.S. population will have PTSD in their lifetime</div>
+                <div class="stat-source">APA, 2022</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number">53-80%</div>
+                <div class="stat-label">Recovery rate with evidence-based treatment</div>
+                <div class="stat-source">VA/DoD Guidelines</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number">8-16</div>
+                <div class="stat-label">Sessions typically needed for trauma-focused therapy</div>
+                <div class="stat-source">Clinical trials</div>
             </div>
         </div>
-    </div>
+    </section>
+
+    <main>
+        <div class="crisis-box">
+            <h3>🆘 In Crisis? Get Help Now</h3>
+            <p>If you or someone you know is in immediate danger or having thoughts of suicide, help is available 24/7.</p>
+            <a href="tel:988" class="crisis-number">988 Suicide & Crisis Lifeline</a>
+            <p style="margin-top: 12px; margin-bottom: 0; font-size: 13px;">Call or text 988 • <a href="https://988lifeline.org/chat/" style="color: #854d0e;">Chat online</a> • Veterans: Press 1</p>
+        </div>
+
+        <section class="section">
+            <div class="section-label">Overview</div>
+            <h2>What is PTSD?</h2>
+            <p>Post-Traumatic Stress Disorder (PTSD) is a psychiatric condition that can develop after a person experiences or witnesses a traumatic event. While it's normal to feel stressed or frightened during and after a dangerous situation, most people recover naturally within a few weeks. PTSD is diagnosed when symptoms persist beyond one month and significantly interfere with daily life.</p>
+            <p><strong>Types of traumatic events that may lead to PTSD include:</strong></p>
+            <ul>
+                <li>Combat exposure and military trauma</li>
+                <li>Sexual assault or abuse</li>
+                <li>Physical assault or violence</li>
+                <li>Serious accidents (car crashes, workplace injuries)</li>
+                <li>Natural disasters (earthquakes, hurricanes, floods)</li>
+                <li>Sudden death of a loved one</li>
+                <li>Childhood abuse or neglect</li>
+                <li>Medical trauma (life-threatening illness, ICU stays)</li>
+            </ul>
+            <p style="margin-top: 20px;"><strong>Not everyone who experiences trauma develops PTSD.</strong> Factors like the severity of the trauma, having a support system, prior trauma history, and individual resilience all play a role in who develops the condition.</p>
+        </section>
+
+        <section class="section">
+            <div class="section-label">Symptoms</div>
+            <h2>Recognizing PTSD Symptoms</h2>
+            <p>PTSD symptoms are grouped into four main categories. Symptoms must last more than one month and cause significant distress or functional impairment to meet diagnostic criteria.</p>
+            
+            <div class="symptom-grid">
+                <div class="symptom-card">
+                    <h4>🔄 Intrusive Memories</h4>
+                    <ul>
+                        <li>Flashbacks—reliving the trauma</li>
+                        <li>Recurrent, unwanted memories</li>
+                        <li>Upsetting dreams or nightmares</li>
+                        <li>Severe emotional distress from reminders</li>
+                        <li>Physical reactions to triggers</li>
+                    </ul>
+                </div>
+                <div class="symptom-card">
+                    <h4>🚫 Avoidance</h4>
+                    <ul>
+                        <li>Avoiding thoughts about the trauma</li>
+                        <li>Avoiding places, activities, or people</li>
+                        <li>Emotional numbing</li>
+                        <li>Not talking about what happened</li>
+                        <li>Feeling detached from others</li>
+                    </ul>
+                </div>
+                <div class="symptom-card">
+                    <h4>😔 Negative Changes in Thinking & Mood</h4>
+                    <ul>
+                        <li>Negative beliefs about self or world</li>
+                        <li>Persistent fear, guilt, or shame</li>
+                        <li>Memory problems about the trauma</li>
+                        <li>Difficulty feeling positive emotions</li>
+                        <li>Feeling estranged from loved ones</li>
+                    </ul>
+                </div>
+                <div class="symptom-card">
+                    <h4>⚡ Changes in Arousal & Reactivity</h4>
+                    <ul>
+                        <li>Being easily startled</li>
+                        <li>Always feeling "on guard"</li>
+                        <li>Difficulty sleeping</li>
+                        <li>Irritability or angry outbursts</li>
+                        <li>Difficulty concentrating</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <h3>💡 Complex PTSD (C-PTSD)</h3>
+                <p>Complex PTSD can develop from prolonged or repeated trauma, especially during childhood. In addition to standard PTSD symptoms, it may include difficulties with emotional regulation, persistent feelings of emptiness or hopelessness, and problems with relationships and self-identity. While not yet in the DSM-5, it is recognized in the ICD-11.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-label">Treatment</div>
+            <h2>Evidence-Based PTSD Treatments</h2>
+            <p>PTSD is treatable. The most effective treatments are trauma-focused psychotherapies, which have been extensively studied in clinical trials. Medications can also help, especially when combined with therapy.</p>
+            
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Treatment</th>
+                        <th>Type</th>
+                        <th>Sessions</th>
+                        <th>How It Works</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>CPT</strong></td>
+                        <td>Psychotherapy</td>
+                        <td>12 sessions</td>
+                        <td>Challenges and changes unhelpful trauma-related beliefs</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Prolonged Exposure</strong></td>
+                        <td>Psychotherapy</td>
+                        <td>8-15 sessions</td>
+                        <td>Gradual, safe confrontation of trauma memories and triggers</td>
+                    </tr>
+                    <tr>
+                        <td><strong>EMDR</strong></td>
+                        <td>Psychotherapy</td>
+                        <td>6-12 sessions</td>
+                        <td>Uses bilateral stimulation while processing traumatic memories</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Sertraline (Zoloft)</strong></td>
+                        <td>SSRI Medication</td>
+                        <td>Ongoing</td>
+                        <td>FDA-approved; reduces PTSD symptoms 50-60% of patients</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Paroxetine (Paxil)</strong></td>
+                        <td>SSRI Medication</td>
+                        <td>Ongoing</td>
+                        <td>FDA-approved; effective for core PTSD symptoms</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p style="font-size: 13px; color: var(--text-muted); margin-top: 12px;">Sources: VA/DoD Clinical Practice Guidelines, American Psychological Association, NICE Guidelines</p>
+
+            <h3>Cognitive Processing Therapy (CPT)</h3>
+            <p>CPT is typically delivered in 12 sessions over 6 weeks. It helps you understand how trauma changed your thoughts about yourself, others, and the world—and how to develop more balanced, helpful beliefs. CPT is highly effective: clinical trials show 53% of veterans and up to 80% of civilians no longer meet PTSD criteria after treatment.</p>
+
+            <h3>Prolonged Exposure (PE)</h3>
+            <p>PE works through two main components: imaginal exposure (retelling the trauma memory in a safe environment) and in-vivo exposure (gradually approaching avoided situations). Sessions typically last 90 minutes. PE helps you process the trauma memory and reduces the power it has over you.</p>
+
+            <h3>EMDR (Eye Movement Desensitization and Reprocessing)</h3>
+            <p>EMDR uses bilateral stimulation (like eye movements) while you briefly focus on traumatic memories. This appears to help the brain reprocess trauma so it becomes less distressing. EMDR is recognized by the WHO, APA, and VA as an effective PTSD treatment.</p>
+        </section>
+
+        <section class="section">
+            <div class="section-label">Medications</div>
+            <h2>Medications for PTSD</h2>
+            <p>While trauma-focused therapy is considered first-line treatment, medications can be helpful—especially when therapy isn't immediately available, when symptoms are severe, or when used alongside therapy.</p>
+            <p><strong>FDA-approved medications for PTSD:</strong></p>
+            <ul>
+                <li><strong>Sertraline (Zoloft)</strong> — SSRI antidepressant; 50-200mg daily. Can reduce all PTSD symptom clusters.</li>
+                <li><strong>Paroxetine (Paxil)</strong> — SSRI antidepressant; 20-60mg daily. Effective for core PTSD symptoms.</li>
+            </ul>
+            <p><strong>Other commonly used medications:</strong></p>
+            <ul>
+                <li><strong>Prazosin</strong> — Alpha-blocker used off-label to reduce PTSD-related nightmares.</li>
+                <li><strong>Venlafaxine (Effexor)</strong> — SNRI with evidence supporting use for PTSD.</li>
+            </ul>
+
+            <div class="warning-box">
+                <h3>⚠️ Medications Not Recommended</h3>
+                <p><strong>Benzodiazepines</strong> (like Xanax, Klonopin) are not recommended for PTSD. Research shows they can interfere with trauma processing, increase risk of PTSD development after trauma, and carry high addiction potential. If you're currently taking benzodiazepines, don't stop abruptly—talk to your prescriber about tapering safely.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-label">Recovery</div>
+            <h2>Living With and Beyond PTSD</h2>
+            <p>Recovery from PTSD is possible. With effective treatment, most people see significant improvement in symptoms. Many no longer meet PTSD diagnostic criteria after completing evidence-based therapy.</p>
+            
+            <h3>What Recovery Looks Like</h3>
+            <ul>
+                <li>Trauma memories become less intrusive and distressing</li>
+                <li>You can think about what happened without being overwhelmed</li>
+                <li>Avoidance decreases—you can go places and do things again</li>
+                <li>Sleep improves; nightmares become less frequent</li>
+                <li>You feel more like yourself and more connected to others</li>
+                <li>The trauma becomes part of your history, not your whole story</li>
+            </ul>
+
+            <h3>Supporting Your Recovery</h3>
+            <ul>
+                <li><strong>Commit to treatment</strong> — Evidence-based therapy works, but it takes time. Stick with it.</li>
+                <li><strong>Build a support network</strong> — Connect with people who understand. Support groups can help.</li>
+                <li><strong>Take care of your body</strong> — Regular exercise, good sleep hygiene, and limiting alcohol improve outcomes.</li>
+                <li><strong>Practice self-compassion</strong> — Healing isn't linear. Setbacks don't mean failure.</li>
+                <li><strong>Create safety</strong> — Establish routines and environments that feel safe and grounding.</li>
+            </ul>
+
+            <div class="info-box">
+                <h3>💪 Post-Traumatic Growth</h3>
+                <p>Many trauma survivors experience positive changes after processing their trauma—a phenomenon called post-traumatic growth. This can include deeper relationships, new possibilities, personal strength, spiritual development, and greater appreciation for life. Growth and distress can coexist; one doesn't cancel the other.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-label">Getting Help</div>
+            <h2>Finding PTSD Treatment</h2>
+            <p>If you think you may have PTSD, the most important step is reaching out for help. Here's how to start:</p>
+            <ul>
+                <li><strong>Primary care provider</strong> — Your doctor can screen for PTSD and provide referrals.</li>
+                <li><strong>Mental health professionals</strong> — Look for therapists trained in CPT, PE, or EMDR.</li>
+                <li><strong>Veterans</strong> — VA provides free PTSD treatment for eligible veterans. Call 1-877-222-8387.</li>
+                <li><strong>Community mental health centers</strong> — Often offer sliding-scale fees.</li>
+                <li><strong>PTSD Foundation of America</strong> — Connects people with treatment resources.</li>
+            </ul>
+            
+            <h3>Questions to Ask a Potential Therapist</h3>
+            <ul>
+                <li>Are you trained in evidence-based PTSD treatments like CPT, PE, or EMDR?</li>
+                <li>How many PTSD patients have you treated?</li>
+                <li>What does treatment look like, and how long does it typically take?</li>
+                <li>Do you accept my insurance or offer sliding-scale fees?</li>
+            </ul>
+        </section>
+
+        <div class="last-reviewed">
+            <strong>Last reviewed:</strong> February 2026 · Content based on VA/DoD Clinical Practice Guidelines, APA Treatment Guidelines, and peer-reviewed research.
+        </div>
+    </main>
 
     <footer>
         <div class="footer-inner">
             <div class="footer-brand">
                 <a href="/" class="logo">ptsd<span>.md</span></a>
-                <p>Evidence-based PTSD information. Not a substitute for professional mental health treatment.</p>
+                <p>Part of the <a href="https://thrive.md" style="color: var(--accent); text-decoration: none;">thrive.md</a> mental health network. Evidence-based information about trauma and recovery, reviewed by mental health professionals.</p>
             </div>
             <div class="footer-links">
-                <h4>Learn</h4>
+                <h4>Information</h4>
                 <a href="/symptoms.html">Symptoms</a>
-                <a href="/treatment.html">Treatment</a>
-                <a href="/recovery.html">Recovery</a>
+                <a href="/treatment.html">Treatment Options</a>
+                <a href="/recovery.html">Recovery & Living</a>
+                <a href="/faq.html">FAQ</a>
             </div>
             <div class="footer-links">
                 <h4>Resources</h4>
-                <a href="/blog.html">Articles</a>
-                <a href="/resources.html">Resources</a>
+                <a href="/resources.html">Support Resources</a>
+                <a href="https://www.ptsd.va.gov" target="_blank" rel="noopener">National Center for PTSD</a>
+                <a href="https://988lifeline.org" target="_blank" rel="noopener">988 Crisis Lifeline</a>
             </div>
             <div class="footer-links">
-                <h4>Network</h4>
-                <a href="https://thrive.md">thrive.md</a>
-                <a href="https://mental.md">mental.md</a>
-                <a href="https://anxiety.md">anxiety.md</a>
+                <h4>About</h4>
+                <a href="https://thrive.md/editorial-policy.html">Editorial Policy</a>
+                <a href="https://thrive.md/clinical-review.html">Clinical Review</a>
+                <a href="mailto:hello@thrive.md">Contact</a>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>© 2026 ptsd.md · Part of the <a href="https://thrive.md">thrive.md</a> health network · <a href="tel:988">Crisis Line: 988</a></p>
-            <p style="margin-top: 12px; font-size: 12px;">This website provides general health information. It is not a substitute for professional medical advice, diagnosis, or treatment.</p>
+            <p>© 2026 ptsd.md · A <a href="https://thrive.md" style="color: var(--text-muted); text-decoration: none;">thrive.md</a> property</p>
+            <p><strong>Disclaimer:</strong> This site provides information, not medical advice. Always consult a mental health professional for diagnosis and treatment.</p>
         </div>
     </footer>
 
     <script>
+        const QA_API = 'https://md-qa.md-health.workers.dev/ask';
+        const SESSION_ID = 'session_' + Math.random().toString(36).substr(2, 9);
         const TOPIC = 'ptsd';
-        function toggleChat() {
-            document.getElementById('chatPanel').classList.toggle('open');
+        
+        let splitModeActive = false;
+        
+        function getActiveMessagesDiv() {
+            return splitModeActive 
+                ? document.getElementById('panel-messages')
+                : document.getElementById('chat-messages');
         }
-        async function sendMessage() {
-            const input = document.getElementById('chatInput');
-            const messages = document.getElementById('chatMessages');
+        
+        function getActiveInput() {
+            return splitModeActive
+                ? document.getElementById('panel-input')
+                : document.getElementById('qa-input');
+        }
+        
+        function activateSplitMode() {
+            if (splitModeActive) return;
+            splitModeActive = true;
+            
+            document.body.classList.add('split-mode');
+            const panel = document.getElementById('chat-panel');
+            panel.style.display = 'flex';
+            
+            const heroMessages = document.getElementById('chat-messages');
+            const panelMessages = document.getElementById('panel-messages');
+            panelMessages.innerHTML = heroMessages.innerHTML;
+            panelMessages.classList.add('active');
+            
+            document.getElementById('panel-input').focus();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+        
+        function closeSplitMode() {
+            splitModeActive = false;
+            document.body.classList.remove('split-mode');
+            document.getElementById('chat-panel').style.display = 'none';
+            
+            const panelMessages = document.getElementById('panel-messages');
+            const heroMessages = document.getElementById('chat-messages');
+            heroMessages.innerHTML = panelMessages.innerHTML;
+            heroMessages.classList.add('active');
+        }
+
+        function addMessage(text, isUser = false) {
+            const messagesDiv = getActiveMessagesDiv();
+            messagesDiv.classList.add('active');
+            
+            const msgDiv = document.createElement('div');
+            msgDiv.className = `chat-message ${isUser ? 'user' : 'assistant'}`;
+            msgDiv.innerHTML = `
+                <div class="chat-avatar">${isUser ? 'You' : 'MD'}</div>
+                <div class="chat-bubble"><p>${text}</p></div>
+            `;
+            
+            messagesDiv.appendChild(msgDiv);
+            messagesDiv.scrollTop = messagesDiv.scrollHeight;
+            return msgDiv;
+        }
+
+        async function askQuestion() {
+            const input = getActiveInput();
             const question = input.value.trim();
+            
             if (!question) return;
             
-            messages.innerHTML += `<div class="chat-message user">${question}</div>`;
+            const suggestions = document.getElementById('qa-suggestions');
+            if (suggestions) suggestions.style.display = 'none';
+            
+            addMessage(question, true);
             input.value = '';
             
-            const botMsg = document.createElement('div');
-            botMsg.className = 'chat-message bot';
-            botMsg.textContent = '...';
-            messages.appendChild(botMsg);
-            messages.scrollTop = messages.scrollHeight;
+            if (!splitModeActive) {
+                activateSplitMode();
+            }
+            
+            const responseMsg = addMessage('Thinking...');
             
             try {
-                const response = await fetch('https://md-qa.md-health.workers.dev/ask', {
+                const res = await fetch(QA_API, {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ question, topic: TOPIC })
+                    body: JSON.stringify({ question, topic: TOPIC, sessionId: SESSION_ID }),
                 });
                 
-                const reader = response.body.getReader();
+                if (!res.ok) {
+                    const error = await res.json();
+                    throw new Error(error.error || 'Request failed');
+                }
+                
+                const reader = res.body.getReader();
                 const decoder = new TextDecoder();
                 let fullText = '';
+                let displayedText = '';
+                let renderQueue = [];
+                let isRendering = false;
+                const CHARS_PER_TICK = 3;
+                const TICK_MS = 16;
+                
+                function renderLoop() {
+                    if (renderQueue.length === 0) {
+                        isRendering = false;
+                        return;
+                    }
+                    const batch = renderQueue.splice(0, CHARS_PER_TICK).join('');
+                    displayedText += batch;
+                    responseMsg.querySelector('p').textContent = displayedText;
+                    getActiveMessagesDiv().scrollTop = getActiveMessagesDiv().scrollHeight;
+                    requestAnimationFrame(() => setTimeout(renderLoop, TICK_MS));
+                }
+                
+                function queueText(text) {
+                    for (const char of text) {
+                        renderQueue.push(char);
+                    }
+                    if (!isRendering) {
+                        isRendering = true;
+                        renderLoop();
+                    }
+                }
                 
                 while (true) {
                     const { done, value } = await reader.read();
                     if (done) break;
+                    
                     const chunk = decoder.decode(value);
                     const lines = chunk.split('\n');
+                    
                     for (const line of lines) {
-                        if (line.startsWith('data: ') && !line.includes('[DONE]')) {
+                        if (line.startsWith('data: ')) {
+                            const data = line.slice(6);
+                            if (data === '[DONE]') continue;
+                            
                             try {
-                                const data = JSON.parse(line.slice(6));
-                                if (data.text) {
-                                    fullText += data.text;
-                                    botMsg.textContent = fullText;
+                                const parsed = JSON.parse(data);
+                                if (parsed.text) {
+                                    fullText += parsed.text;
+                                    queueText(parsed.text);
                                 }
                             } catch (e) {}
                         }
                     }
                 }
-            } catch (error) {
-                botMsg.textContent = 'Sorry, I encountered an error. Please try again.';
+                
+                await new Promise(resolve => {
+                    const checkDone = () => {
+                        if (renderQueue.length === 0 && !isRendering) {
+                            resolve();
+                        } else {
+                            setTimeout(checkDone, 50);
+                        }
+                    };
+                    checkDone();
+                });
+                
+                const formatted = fullText.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener">$1</a>');
+                responseMsg.querySelector('p').innerHTML = formatted;
+                
+            } catch (err) {
+                responseMsg.querySelector('p').innerHTML = `<span style="color: #ef4444;">Sorry, something went wrong. Please try again.</span>`;
             }
-            messages.scrollTop = messages.scrollHeight;
+            
+            getActiveMessagesDiv().scrollTop = getActiveMessagesDiv().scrollHeight;
         }
+        
+        function askSuggestion(el) {
+            document.getElementById('qa-input').value = el.textContent;
+            askQuestion();
+        }
+        
+        document.getElementById('qa-input').addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' && !e.shiftKey) {
+                e.preventDefault();
+                askQuestion();
+            }
+        });
+        
+        document.getElementById('panel-input').addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' && !e.shiftKey) {
+                e.preventDefault();
+                askQuestion();
+            }
+        });
     </script>
-<p style="text-align:center;color:#64748b;font-size:12px;padding:20px;">Last reviewed: February 2026</p></body>
+</body>
 </html>
