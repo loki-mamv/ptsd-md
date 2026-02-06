@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="ai-content" content="allowed">
+    <meta name="ai-training" content="allowed">
+    <meta name="ai-topic" content="PTSD, trauma, mental health, therapy">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PTSD Guide — Understanding & Treating Post-Traumatic Stress | ptsd.md</title>
+    <meta name="description" content="Evidence-based information about PTSD. Understand symptoms, effective treatments, and paths to recovery after trauma.">
+    <meta name="keywords" content="PTSD, post-traumatic stress disorder, trauma, PTSD treatment, EMDR, trauma therapy">
+    <link rel="canonical" href="https://ptsd.md/">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ptsd.md/">
+    <meta property="og:title" content="PTSD Guide — ptsd.md">
+    <meta property="og:description" content="Understanding PTSD: symptoms, treatments, and recovery.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Health Guide">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalWebPage",
+      "name": "PTSD Guide",
+      "description": "Comprehensive guide to understanding and treating post-traumatic stress disorder.",
+      "url": "https://ptsd.md/",
+      "medicalAudience": {"@type": "MedicalAudience", "audienceType": "Patient"}
+    }
+    </script>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext x='16' y='24' font-family='-apple-system,system-ui,sans-serif' font-weight='800' font-size='16' fill='%2306b6d4' text-anchor='middle'%3E.md%3C/text%3E%3C/svg%3E">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #ffffff;
+            --bg-secondary: #f8fafc;
+            --text-primary: #0f172a;
+            --text-secondary: #475569;
+            --text-muted: #94a3b8;
+            --accent: #06b6d4;
+            --accent-dark: #0891b2;
+            --accent-light: #cffafe;
+            --border: #e2e8f0;
+            --font-display: 'Source Serif 4', Georgia, serif;
+            --font-body: 'Inter', -apple-system, sans-serif;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: var(--font-body); background: var(--bg-primary); color: var(--text-primary); line-height: 1.7; }
+        
+        header { background: var(--bg-primary); border-bottom: 1px solid var(--border); padding: 16px 24px; position: sticky; top: 0; z-index: 100; }
+        .header-inner { max-width: 1100px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-family: var(--font-display); font-size: 24px; font-weight: 600; color: var(--text-primary); text-decoration: none; }
+        .logo span { color: var(--accent); }
+        nav a { color: var(--text-secondary); text-decoration: none; margin-left: 24px; font-size: 15px; font-weight: 500; }
+        nav a:hover { color: var(--accent); }
+        
+        .hero { padding: 80px 24px; text-align: center; background: linear-gradient(180deg, var(--accent-light) 0%, var(--bg-primary) 100%); }
+        .hero h1 { font-family: var(--font-display); font-size: clamp(36px, 6vw, 56px); font-weight: 700; margin-bottom: 20px; line-height: 1.1; }
+        .hero p { font-size: 20px; color: var(--text-secondary); max-width: 600px; margin: 0 auto 32px; }
+        
+        .crisis-banner { background: #fef2f2; border: 1px solid #fecaca; border-radius: 12px; padding: 20px 24px; max-width: 800px; margin: -40px auto 40px; text-align: center; }
+        .crisis-banner h3 { color: #b91c1c; font-size: 16px; margin-bottom: 8px; }
+        .crisis-banner p { color: #7f1d1d; font-size: 14px; margin: 0; }
+        .crisis-banner a { color: #b91c1c; font-weight: 600; }
+        
+        .symptoms { max-width: 1100px; margin: 0 auto; padding: 60px 24px; }
+        .symptoms h2 { font-family: var(--font-display); font-size: 32px; text-align: center; margin-bottom: 40px; }
+        .symptom-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 24px; }
+        .symptom-card { background: var(--bg-secondary); border: 1px solid var(--border); border-radius: 16px; padding: 28px; }
+        .symptom-card h3 { font-size: 18px; margin-bottom: 16px; display: flex; align-items: center; gap: 12px; }
+        .symptom-card h3 span { font-size: 28px; }
+        .symptom-card ul { margin: 0; padding-left: 20px; color: var(--text-secondary); }
+        .symptom-card li { margin-bottom: 8px; }
+        
+        .treatment { max-width: 900px; margin: 0 auto; padding: 60px 24px; }
+        .treatment h2 { font-family: var(--font-display); font-size: 32px; text-align: center; margin-bottom: 40px; }
+        .treatment-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+        .treatment-card { background: var(--bg-secondary); border-radius: 12px; padding: 24px; border-left: 4px solid var(--accent); }
+        .treatment-card h4 { font-size: 18px; margin-bottom: 8px; }
+        .treatment-card .tag { display: inline-block; font-size: 11px; font-weight: 600; color: var(--accent-dark); background: var(--accent-light); padding: 3px 8px; border-radius: 4px; margin-bottom: 12px; }
+        .treatment-card p { color: var(--text-secondary); font-size: 15px; margin: 0; }
+        
+        .faq { max-width: 800px; margin: 0 auto; padding: 60px 24px; }
+        .faq h2 { font-family: var(--font-display); font-size: 32px; text-align: center; margin-bottom: 40px; }
+        .faq-item { border-bottom: 1px solid var(--border); padding: 24px 0; }
+        .faq-item h3 { font-size: 18px; font-weight: 600; margin-bottom: 12px; }
+        .faq-item p { color: var(--text-secondary); margin: 0; }
+        
+        .chat-widget { position: fixed; bottom: 24px; right: 24px; z-index: 1000; }
+        .chat-btn { width: 60px; height: 60px; border-radius: 50%; background: var(--accent); border: none; cursor: pointer; box-shadow: 0 4px 16px rgba(6,182,212,0.3); display: flex; align-items: center; justify-content: center; transition: transform 0.2s; }
+        .chat-btn:hover { transform: scale(1.1); }
+        .chat-btn svg { width: 28px; height: 28px; fill: white; }
+        .chat-panel { position: absolute; bottom: 72px; right: 0; width: 380px; max-height: 500px; background: white; border-radius: 16px; box-shadow: 0 8px 32px rgba(0,0,0,0.15); display: none; flex-direction: column; overflow: hidden; }
+        .chat-panel.open { display: flex; }
+        .chat-header { background: var(--accent); color: white; padding: 16px 20px; display: flex; justify-content: space-between; align-items: center; }
+        .chat-header h4 { font-size: 16px; font-weight: 600; }
+        .chat-close { background: none; border: none; color: white; font-size: 24px; cursor: pointer; }
+        .chat-messages { flex: 1; padding: 20px; overflow-y: auto; min-height: 300px; }
+        .chat-message { margin-bottom: 16px; }
+        .chat-message.bot { background: var(--bg-secondary); padding: 12px 16px; border-radius: 12px 12px 12px 0; }
+        .chat-message.user { background: var(--accent); color: white; padding: 12px 16px; border-radius: 12px 12px 0 12px; margin-left: 40px; }
+        .chat-input { display: flex; padding: 16px; border-top: 1px solid var(--border); gap: 12px; }
+        .chat-input input { flex: 1; padding: 12px 16px; border: 1px solid var(--border); border-radius: 24px; font-size: 14px; }
+        .chat-input button { background: var(--accent); color: white; border: none; padding: 12px 20px; border-radius: 24px; font-weight: 600; cursor: pointer; }
+        
+        footer { background: var(--bg-secondary); border-top: 1px solid var(--border); padding: 48px 24px; margin-top: 60px; }
+        .footer-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 40px; }
+        .footer-brand p { font-size: 14px; color: var(--text-muted); margin-top: 12px; }
+        .footer-links h4 { font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; }
+        .footer-links a { display: block; color: var(--text-muted); text-decoration: none; font-size: 14px; margin-bottom: 10px; }
+        .footer-links a:hover { color: var(--accent); }
+        .footer-bottom { max-width: 1100px; margin: 32px auto 0; padding-top: 24px; border-top: 1px solid var(--border); font-size: 13px; color: var(--text-muted); text-align: center; }
+        
+        @media (max-width: 768px) {
+            nav { display: none; }
+            .footer-inner { grid-template-columns: 1fr; }
+            .chat-panel { width: calc(100vw - 48px); right: -12px; }
+        }
+    </style>
+</head>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "What is PTSD?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Post-traumatic stress disorder (PTSD) is a mental health condition triggered by experiencing or witnessing a terrifying event."
+        }
+      }]
+    }
+    </script>
+<body>
+    <header>
+        <div class="header-inner">
+            <a href="/" class="logo">ptsd<span>.md</span></a>
+            <nav>
+                <a href="/">Home</a>
+                <a href="/blog.html">Articles</a>
+                <a href="/resources.html">Resources</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1>Understanding PTSD</h1>
+        <p>Evidence-based information about post-traumatic stress disorder, effective treatments, and the path to recovery.</p>
+    </section>
+
+    <div class="crisis-banner">
+        <h3>🆘 Need Immediate Help?</h3>
+        <p>Veterans Crisis Line: <a href="tel:988">988</a> (press 1) · Crisis Text Line: Text HOME to <a href="sms:741741">741741</a> · Emergency: <a href="tel:911">911</a></p>
+    </div>
+
+    <section class="symptoms">
+        <h2>PTSD Symptom Clusters</h2>
+        <div class="symptom-grid">
+            <div class="symptom-card">
+                <h3><span>🔄</span> Re-experiencing</h3>
+                <ul>
+                    <li>Intrusive memories of the trauma</li>
+                    <li>Flashbacks (feeling like it's happening again)</li>
+                    <li>Nightmares about the event</li>
+                    <li>Severe emotional distress when reminded</li>
+                    <li>Physical reactions to reminders (racing heart, sweating)</li>
+                </ul>
+            </div>
+            <div class="symptom-card">
+                <h3><span>🚫</span> Avoidance</h3>
+                <ul>
+                    <li>Avoiding thoughts or feelings about the trauma</li>
+                    <li>Avoiding people, places, or activities that are reminders</li>
+                    <li>Emotional numbing</li>
+                    <li>Feeling detached from others</li>
+                    <li>Loss of interest in activities</li>
+                </ul>
+            </div>
+            <div class="symptom-card">
+                <h3><span>💭</span> Cognition & Mood</h3>
+                <ul>
+                    <li>Negative beliefs about self or world</li>
+                    <li>Distorted blame of self or others</li>
+                    <li>Persistent negative emotions (fear, guilt, shame)</li>
+                    <li>Difficulty experiencing positive emotions</li>
+                    <li>Memory gaps about the trauma</li>
+                </ul>
+            </div>
+            <div class="symptom-card">
+                <h3><span>⚡</span> Arousal & Reactivity</h3>
+                <ul>
+                    <li>Hypervigilance (always on alert)</li>
+                    <li>Exaggerated startle response</li>
+                    <li>Difficulty sleeping</li>
+                    <li>Irritability or angry outbursts</li>
+                    <li>Difficulty concentrating</li>
+                    <li>Reckless or self-destructive behavior</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="treatment">
+        <h2>Evidence-Based Treatments</h2>
+        <div class="treatment-grid">
+            <div class="treatment-card">
+                <h4>Prolonged Exposure (PE)</h4>
+                <span class="tag">Gold Standard</span>
+                <p>Gradually approaching trauma-related memories and situations in a safe environment, reducing their power over time. Highly effective with strong research support.</p>
+            </div>
+            <div class="treatment-card">
+                <h4>Cognitive Processing Therapy (CPT)</h4>
+                <span class="tag">Gold Standard</span>
+                <p>Identifies and challenges unhelpful beliefs developed after trauma ("stuck points"). Typically 12 sessions. Effective for various trauma types.</p>
+            </div>
+            <div class="treatment-card">
+                <h4>EMDR</h4>
+                <span class="tag">Recommended</span>
+                <p>Eye Movement Desensitization and Reprocessing uses bilateral stimulation while processing traumatic memories. Well-researched and effective for many.</p>
+            </div>
+            <div class="treatment-card">
+                <h4>Medications</h4>
+                <span class="tag">Adjunct</span>
+                <p>SSRIs (sertraline, paroxetine) are FDA-approved for PTSD. Prazosin helps with nightmares. Medications often combined with therapy.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item">
+            <h3>What kinds of events cause PTSD?</h3>
+            <p>PTSD can develop after experiencing or witnessing actual or threatened death, serious injury, or sexual violence. This includes combat, assault, accidents, natural disasters, childhood abuse, and other traumatic events. Not everyone who experiences trauma develops PTSD.</p>
+        </div>
+        <div class="faq-item">
+            <h3>How long do symptoms need to last for a PTSD diagnosis?</h3>
+            <p>Symptoms must persist for more than one month and cause significant distress or impairment. Many people experience acute stress symptoms after trauma that resolve on their own. If symptoms last beyond a month, professional evaluation is recommended.</p>
+        </div>
+        <div class="faq-item">
+            <h3>Can PTSD develop years after the trauma?</h3>
+            <p>Yes. While symptoms often begin within 3 months of trauma, "delayed-onset PTSD" can emerge months or even years later, sometimes triggered by life changes, additional stress, or reminders of the original trauma.</p>
+        </div>
+        <div class="faq-item">
+            <h3>Does treatment really work?</h3>
+            <p>Yes. Research shows 53-80% of people completing trauma-focused therapy no longer meet PTSD criteria afterward. Treatment doesn't erase memories but changes how your brain processes them, reducing their distressing impact.</p>
+        </div>
+        <div class="faq-item">
+            <h3>Will I have to talk about what happened in detail?</h3>
+            <p>Effective treatments do involve processing the trauma, but this happens gradually at your pace with a trained therapist. You're never forced to share more than you're ready for. The goal is to reduce—not increase—distress over time.</p>
+        </div>
+    </section>
+
+    <div class="chat-widget">
+        <button class="chat-btn" onclick="toggleChat()" aria-label="Open chat">
+            <svg viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H6l-2 2V4h16v12z"/></svg>
+        </button>
+        <div class="chat-panel" id="chatPanel">
+            <div class="chat-header">
+                <h4>Ask about PTSD</h4>
+                <button class="chat-close" onclick="toggleChat()">×</button>
+            </div>
+            <div class="chat-messages" id="chatMessages">
+                <div class="chat-message bot">Hi! I can answer questions about PTSD, trauma, and treatment options. What would you like to know?</div>
+            </div>
+            <div class="chat-input">
+                <input type="text" id="chatInput" placeholder="Type your question..." onkeypress="if(event.key==='Enter')sendMessage()">
+                <button onclick="sendMessage()">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <a href="/" class="logo">ptsd<span>.md</span></a>
+                <p>Evidence-based PTSD information. Not a substitute for professional mental health treatment.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Learn</h4>
+                <a href="/symptoms.html">Symptoms</a>
+                <a href="/treatment.html">Treatment</a>
+                <a href="/recovery.html">Recovery</a>
+            </div>
+            <div class="footer-links">
+                <h4>Resources</h4>
+                <a href="/blog.html">Articles</a>
+                <a href="/resources.html">Resources</a>
+            </div>
+            <div class="footer-links">
+                <h4>Network</h4>
+                <a href="https://thrive.md">thrive.md</a>
+                <a href="https://mental.md">mental.md</a>
+                <a href="https://anxiety.md">anxiety.md</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 ptsd.md · Part of the <a href="https://thrive.md">thrive.md</a> health network · <a href="tel:988">Crisis Line: 988</a></p>
+            <p style="margin-top: 12px; font-size: 12px;">This website provides general health information. It is not a substitute for professional medical advice, diagnosis, or treatment.</p>
+        </div>
+    </footer>
+
+    <script>
+        const TOPIC = 'ptsd';
+        function toggleChat() {
+            document.getElementById('chatPanel').classList.toggle('open');
+        }
+        async function sendMessage() {
+            const input = document.getElementById('chatInput');
+            const messages = document.getElementById('chatMessages');
+            const question = input.value.trim();
+            if (!question) return;
+            
+            messages.innerHTML += `<div class="chat-message user">${question}</div>`;
+            input.value = '';
+            
+            const botMsg = document.createElement('div');
+            botMsg.className = 'chat-message bot';
+            botMsg.textContent = '...';
+            messages.appendChild(botMsg);
+            messages.scrollTop = messages.scrollHeight;
+            
+            try {
+                const response = await fetch('https://md-qa.md-health.workers.dev/ask', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ question, topic: TOPIC })
+                });
+                
+                const reader = response.body.getReader();
+                const decoder = new TextDecoder();
+                let fullText = '';
+                
+                while (true) {
+                    const { done, value } = await reader.read();
+                    if (done) break;
+                    const chunk = decoder.decode(value);
+                    const lines = chunk.split('\n');
+                    for (const line of lines) {
+                        if (line.startsWith('data: ') && !line.includes('[DONE]')) {
+                            try {
+                                const data = JSON.parse(line.slice(6));
+                                if (data.text) {
+                                    fullText += data.text;
+                                    botMsg.textContent = fullText;
+                                }
+                            } catch (e) {}
+                        }
+                    }
+                }
+            } catch (error) {
+                botMsg.textContent = 'Sorry, I encountered an error. Please try again.';
+            }
+            messages.scrollTop = messages.scrollHeight;
+        }
+    </script>
+<p style="text-align:center;color:#64748b;font-size:12px;padding:20px;">Last reviewed: February 2026</p></body>
+</html>
