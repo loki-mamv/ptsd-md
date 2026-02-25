@@ -42,7 +42,7 @@
           "mainEntityOfPage": {"@id": "https://ptsd.md/blog/trauma-responses-fight-flight-freeze-fawn/#article"},
           "wordCount": "733",
           "lastReviewed": "2026-02-20",
-          "reviewedBy": {"@type": "Organization", "name": "thrive.md Clinical Advisory Team"}
+          "reviewedBy": {"@type": "Person", "name": "Dr. Agustin Arrieta", "jobTitle": "MD"}
         },{"@type":"FAQPage","mainEntity":[{"@type": "Question", "name": "Why did I freeze during my trauma instead of fighting back?", "acceptedAnswer": {"@type": "Answer", "text": "Freeze is an automatic survival response controlled by the brainstem \u2014 not a conscious choice. When your nervous system calculated that fight and flight were impossible, freeze activated to protect you. Immobility reduces injury and dissociation reduces pain. You didn't fail to act \u2014 your body chose the best available survival strategy."}}, {"@type": "Question", "name": "Is the fawn response a real thing?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, though it's not yet in the DSM. Coined by therapist Pete Walker, the fawn response is widely recognized in trauma therapy as a survival adaptation \u2014 particularly in people who experienced childhood abuse or lived with unpredictable caregivers. Research on 'tend and befriend' stress responses (Shelley Taylor, UCLA) provides parallel scientific support."}}, {"@type": "Question", "name": "Can you change your trauma response?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Through therapy (particularly somatic and trauma-focused approaches), you can expand your window of tolerance and develop more flexibility in how your nervous system responds to perceived threat. The goal isn't eliminating survival responses but ensuring they activate only when genuinely needed."}}, {"@type": "Question", "name": "How do I know which trauma response is mine?", "acceptedAnswer": {"@type": "Answer", "text": "Notice your default behavior under stress. Do you get angry and confrontational (fight)? Anxious, busy, and avoidant (flight)? Numb, disconnected, and paralyzed (freeze)? People-pleasing and compliant (fawn)? Your pattern may shift depending on context, but most people have a recognizable default."}}]}
       ]
     }
@@ -144,6 +144,11 @@
             .article-header h1 { font-size: 1.75rem; }
             .related-grid { grid-template-columns: 1fr; }
         }
+    
+        /* Medical Reviewer Badge */
+        .medical-reviewer { display: flex; align-items: center; gap: 0.4rem; margin-top: 0.75rem; padding: 0.5rem 0.75rem; background: #f0fdfa; border: 1px solid #ccfbf1; border-radius: 6px; font-size: 0.8rem; color: #0f766e; width: fit-content; }
+        .medical-reviewer svg { flex-shrink: 0; }
+        .medical-disclaimer { font-size: 0.75rem; color: var(--text-muted, #94a3b8); margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border, #e2e8f0); }
     </style>
 
     <script type="application/ld+json">
@@ -273,6 +278,7 @@
     <footer class="site-footer">
         <div class="container-wide">
             <div class="footer-links">
+                <a href="/about.html">About &amp; Editorial Policy</a>
                 <a href="https://thrive.md">thrive.md</a>
                 <a href="https://anxiety.md">anxiety.md</a>
                 <a href="https://depression.md">depression.md</a>

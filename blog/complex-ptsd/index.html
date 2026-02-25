@@ -42,7 +42,7 @@
           "mainEntityOfPage": {"@id": "https://ptsd.md/blog/complex-ptsd/#article"},
           "wordCount": "754",
           "lastReviewed": "2026-02-18",
-          "reviewedBy": {"@type": "Organization", "name": "thrive.md Clinical Advisory Team"}
+          "reviewedBy": {"@type": "Person", "name": "Dr. Agustin Arrieta", "jobTitle": "MD"}
         },{"@type":"FAQPage","mainEntity":[{"@type": "Question", "name": "Is C-PTSD an official diagnosis?", "acceptedAnswer": {"@type": "Answer", "text": "The ICD-11 (used internationally) officially recognizes C-PTSD as a distinct diagnosis. The DSM-5 (used primarily in the U.S.) does not list it separately but acknowledges that some PTSD presentations involve additional features. Many U.S. clinicians use the C-PTSD framework regardless, and treatment guidelines reflect this."}}, {"@type": "Question", "name": "Is C-PTSD the same as borderline personality disorder?", "acceptedAnswer": {"@type": "Answer", "text": "They share features \u2014 emotional dysregulation, interpersonal difficulties, identity issues \u2014 but differ in origin and mechanism. C-PTSD is explicitly trauma-rooted. BPD is a personality organization pattern that may or may not involve trauma. Many people diagnosed with BPD actually have C-PTSD, and the treatment approaches differ significantly."}}, {"@type": "Question", "name": "Can C-PTSD be cured?", "acceptedAnswer": {"@type": "Answer", "text": "Recovery from C-PTSD is possible, though 'recovery' may look different from a single-event PTSD cure. Many people achieve substantial symptom reduction, stable relationships, and a positive sense of self. Recovery tends to be a longer process \u2014 months to years \u2014 and may involve ongoing support. The trajectory is toward increasing freedom and function."}}, {"@type": "Question", "name": "Can C-PTSD develop from emotional neglect alone?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Trauma doesn't require physical violence. Chronic emotional neglect, invalidation, and psychological abuse during childhood can produce C-PTSD. The absence of what should have been present (safety, warmth, attunement) is traumatic in its own right, particularly for developing children."}}]}
       ]
     }
@@ -144,6 +144,11 @@
             .article-header h1 { font-size: 1.75rem; }
             .related-grid { grid-template-columns: 1fr; }
         }
+    
+        /* Medical Reviewer Badge */
+        .medical-reviewer { display: flex; align-items: center; gap: 0.4rem; margin-top: 0.75rem; padding: 0.5rem 0.75rem; background: #f0fdfa; border: 1px solid #ccfbf1; border-radius: 6px; font-size: 0.8rem; color: #0f766e; width: fit-content; }
+        .medical-reviewer svg { flex-shrink: 0; }
+        .medical-disclaimer { font-size: 0.75rem; color: var(--text-muted, #94a3b8); margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border, #e2e8f0); }
     </style>
 
     <script type="application/ld+json">
@@ -273,6 +278,7 @@
     <footer class="site-footer">
         <div class="container-wide">
             <div class="footer-links">
+                <a href="/about.html">About &amp; Editorial Policy</a>
                 <a href="https://thrive.md">thrive.md</a>
                 <a href="https://anxiety.md">anxiety.md</a>
                 <a href="https://depression.md">depression.md</a>

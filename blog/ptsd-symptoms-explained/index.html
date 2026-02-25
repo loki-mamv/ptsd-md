@@ -42,7 +42,7 @@
           "mainEntityOfPage": {"@id": "https://ptsd.md/blog/ptsd-symptoms-explained/#article"},
           "wordCount": "845",
           "lastReviewed": "2026-02-14",
-          "reviewedBy": {"@type": "Organization", "name": "thrive.md Clinical Advisory Team"}
+          "reviewedBy": {"@type": "Person", "name": "Dr. Agustin Arrieta", "jobTitle": "MD"}
         },{"@type":"FAQPage","mainEntity":[{"@type": "Question", "name": "Can you have PTSD without flashbacks?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Flashbacks are the most dramatic symptom but not required for diagnosis. Many people with PTSD experience intrusive memories, nightmares, and physiological reactivity without full dissociative flashbacks. All four symptom clusters must be present, but the specific symptoms within each cluster vary."}}, {"@type": "Question", "name": "How long does PTSD last?", "acceptedAnswer": {"@type": "Answer", "text": "Without treatment, PTSD can persist for years or decades \u2014 the National Center for PTSD notes that some Vietnam veterans still experience active symptoms 50+ years later. With evidence-based treatment (PE, CPT, or EMDR), most people achieve significant improvement within 8-15 sessions."}}, {"@type": "Question", "name": "Can PTSD develop years after the event?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Delayed-onset PTSD affects about 25% of cases. Symptoms may be triggered by subsequent trauma, major life changes, reminders of the original event, or simply reaching a life stage where avoidance strategies stop working."}}, {"@type": "Question", "name": "Is PTSD only from combat or assault?", "acceptedAnswer": {"@type": "Answer", "text": "No. PTSD can develop after any traumatic event including accidents, natural disasters, medical emergencies, childhood abuse, witnessing violence, or sudden loss. First responders, medical professionals, and journalists also have elevated rates due to repeated exposure to traumatic material."}}]}
       ]
     }
@@ -144,6 +144,11 @@
             .article-header h1 { font-size: 1.75rem; }
             .related-grid { grid-template-columns: 1fr; }
         }
+    
+        /* Medical Reviewer Badge */
+        .medical-reviewer { display: flex; align-items: center; gap: 0.4rem; margin-top: 0.75rem; padding: 0.5rem 0.75rem; background: #f0fdfa; border: 1px solid #ccfbf1; border-radius: 6px; font-size: 0.8rem; color: #0f766e; width: fit-content; }
+        .medical-reviewer svg { flex-shrink: 0; }
+        .medical-disclaimer { font-size: 0.75rem; color: var(--text-muted, #94a3b8); margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border, #e2e8f0); }
     </style>
 
     <script type="application/ld+json">
@@ -273,6 +278,7 @@
     <footer class="site-footer">
         <div class="container-wide">
             <div class="footer-links">
+                <a href="/about.html">About &amp; Editorial Policy</a>
                 <a href="https://thrive.md">thrive.md</a>
                 <a href="https://anxiety.md">anxiety.md</a>
                 <a href="https://depression.md">depression.md</a>

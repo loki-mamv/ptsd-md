@@ -42,7 +42,7 @@
           "mainEntityOfPage": {"@id": "https://ptsd.md/blog/ptsd-in-veterans/#article"},
           "wordCount": "734",
           "lastReviewed": "2026-02-19",
-          "reviewedBy": {"@type": "Organization", "name": "thrive.md Clinical Advisory Team"}
+          "reviewedBy": {"@type": "Person", "name": "Dr. Agustin Arrieta", "jobTitle": "MD"}
         },{"@type":"FAQPage","mainEntity":[{"@type": "Question", "name": "What percentage of veterans have PTSD?", "acceptedAnswer": {"@type": "Answer", "text": "It varies by era: 11-20% of OEF/OIF veterans, about 12% of Gulf War veterans, and up to 30% of Vietnam veterans (lifetime). Rates are higher among combat-exposed veterans, women veterans (who also face military sexual trauma risk), and those with multiple deployments."}}, {"@type": "Question", "name": "Can veterans get PTSD treatment outside the VA?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. The MISSION Act (2018) expanded community care options. Veterans can receive approved care from civilian providers when VA services are unavailable within certain drive-time or wait-time standards. Organizations like Cohen Veterans Network, Give an Hour, and The Headstrong Project also provide free or low-cost care."}}, {"@type": "Question", "name": "Does PTSD treatment work for combat veterans?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Randomized controlled trials show that PE, CPT, and EMDR all produce significant improvement in veteran populations. About 50-60% of veterans who complete treatment no longer meet PTSD criteria afterward. The challenge is engagement \u2014 veterans who start and complete therapy do well, but dropout rates remain a concern."}}, {"@type": "Question", "name": "Is military sexual trauma a cause of PTSD?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Military sexual trauma (MST) is a significant cause of PTSD, particularly in women veterans. About 55% of women and 38% of men who experience MST develop PTSD. The VA provides MST-related care at no cost, regardless of service-connected disability status."}}]}
       ]
     }
@@ -144,6 +144,11 @@
             .article-header h1 { font-size: 1.75rem; }
             .related-grid { grid-template-columns: 1fr; }
         }
+    
+        /* Medical Reviewer Badge */
+        .medical-reviewer { display: flex; align-items: center; gap: 0.4rem; margin-top: 0.75rem; padding: 0.5rem 0.75rem; background: #f0fdfa; border: 1px solid #ccfbf1; border-radius: 6px; font-size: 0.8rem; color: #0f766e; width: fit-content; }
+        .medical-reviewer svg { flex-shrink: 0; }
+        .medical-disclaimer { font-size: 0.75rem; color: var(--text-muted, #94a3b8); margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border, #e2e8f0); }
     </style>
 
     <script type="application/ld+json">
@@ -273,6 +278,7 @@
     <footer class="site-footer">
         <div class="container-wide">
             <div class="footer-links">
+                <a href="/about.html">About &amp; Editorial Policy</a>
                 <a href="https://thrive.md">thrive.md</a>
                 <a href="https://anxiety.md">anxiety.md</a>
                 <a href="https://depression.md">depression.md</a>
