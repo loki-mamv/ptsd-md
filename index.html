@@ -62,127 +62,175 @@
     
     <!-- Schema.org Structured Data -->
     <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
     {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "Organization",
-          "@id": "https://thrive.md/#organization",
-          "name": "thrive.md",
-          "url": "https://thrive.md",
-          "description": "A network of premium health domains providing evidence-based medical information."
+      "@type": "Organization",
+      "@id": "https://thrive.md/#organization",
+      "name": "thrive.md",
+      "url": "https://thrive.md",
+      "description": "A network of premium health domains providing evidence-based medical information."
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ptsd.md/#website",
+      "url": "https://ptsd.md",
+      "name": "ptsd.md — Post-Traumatic Stress Disorder Information",
+      "publisher": {
+        "@id": "https://thrive.md/#organization"
+      },
+      "isPartOf": {
+        "@id": "https://thrive.md/#organization"
+      }
+    },
+    {
+      "@type": "MedicalWebPage",
+      "@id": "https://ptsd.md/#webpage",
+      "name": "PTSD: Symptoms, Treatment, and Recovery",
+      "description": "Evidence-based information about Post-Traumatic Stress Disorder (PTSD), including symptoms, causes, evidence-based treatments, and recovery resources.",
+      "url": "https://ptsd.md/",
+      "isPartOf": {
+        "@id": "https://ptsd.md/#website"
+      },
+      "lastReviewed": "2026-02-06",
+      "reviewedBy": {
+        "@type": "Person",
+        "name": "Dr. Agustin Arrieta",
+        "jobTitle": "MD"
+      },
+      "mainEntity": {
+        "@type": "MedicalCondition",
+        "name": "Post-Traumatic Stress Disorder",
+        "alternateName": [
+          "PTSD",
+          "Posttraumatic Stress Disorder",
+          "Trauma Disorder"
+        ],
+        "description": "PTSD is a psychiatric disorder that can develop after experiencing or witnessing a traumatic event. It is characterized by intrusive memories, avoidance behaviors, negative changes in thinking and mood, and changes in physical and emotional reactions.",
+        "code": {
+          "@type": "MedicalCode",
+          "code": "F43.1",
+          "codingSystem": "ICD-10"
         },
-        {
-          "@type": "WebSite",
-          "@id": "https://ptsd.md/#website",
-          "url": "https://ptsd.md",
-          "name": "ptsd.md — Post-Traumatic Stress Disorder Information",
-          "publisher": {"@id": "https://thrive.md/#organization"},
-          "isPartOf": {"@id": "https://thrive.md/#organization"}
-        },
-        {
-          "@type": "MedicalWebPage",
-          "@id": "https://ptsd.md/#webpage",
-          "name": "PTSD: Symptoms, Treatment, and Recovery",
-          "description": "Evidence-based information about Post-Traumatic Stress Disorder (PTSD), including symptoms, causes, evidence-based treatments, and recovery resources.",
-          "url": "https://ptsd.md/",
-          "isPartOf": {"@id": "https://ptsd.md/#website"},
-          "lastReviewed": "2026-02-06",
-          "reviewedBy": {"@type": "Person", "name": "Dr. Agustin Arrieta", "jobTitle": "MD"},
-          "mainEntity": {
-            "@type": "MedicalCondition",
-            "name": "Post-Traumatic Stress Disorder",
-            "alternateName": ["PTSD", "Posttraumatic Stress Disorder", "Trauma Disorder"],
-            "description": "PTSD is a psychiatric disorder that can develop after experiencing or witnessing a traumatic event. It is characterized by intrusive memories, avoidance behaviors, negative changes in thinking and mood, and changes in physical and emotional reactions.",
-            "code": {
-              "@type": "MedicalCode",
-              "code": "F43.1",
-              "codingSystem": "ICD-10"
-            },
-            "signOrSymptom": [
-              {"@type": "MedicalSignOrSymptom", "name": "Flashbacks and intrusive memories"},
-              {"@type": "MedicalSignOrSymptom", "name": "Nightmares related to the trauma"},
-              {"@type": "MedicalSignOrSymptom", "name": "Avoidance of trauma reminders"},
-              {"@type": "MedicalSignOrSymptom", "name": "Negative changes in mood and cognition"},
-              {"@type": "MedicalSignOrSymptom", "name": "Hyperarousal and hypervigilance"}
-            ],
-            "possibleTreatment": [
-              {"@type": "MedicalTherapy", "name": "EMDR (Eye Movement Desensitization and Reprocessing)"},
-              {"@type": "MedicalTherapy", "name": "Cognitive Processing Therapy (CPT)"},
-              {"@type": "MedicalTherapy", "name": "Prolonged Exposure Therapy (PE)"},
-              {"@type": "MedicalTherapy", "name": "Sertraline (Zoloft) — SSRI"},
-              {"@type": "MedicalTherapy", "name": "Paroxetine (Paxil) — SSRI"}
-            ],
-            "epidemiology": "Approximately 6% of the U.S. population will have PTSD at some point in their lives. About 12 million adults have PTSD during any given year.",
-            "riskFactor": [
-              "Experiencing or witnessing traumatic events",
-              "History of childhood trauma or abuse",
-              "Military combat exposure",
-              "Sexual assault or violence",
-              "Lack of social support after trauma"
-            ]
+        "signOrSymptom": [
+          {
+            "@type": "MedicalSignOrSymptom",
+            "name": "Flashbacks and intrusive memories"
           },
-          "speakable": {
-            "@type": "SpeakableSpecification",
-            "cssSelector": ["h1", ".stat-number", ".hero-subtitle"]
+          {
+            "@type": "MedicalSignOrSymptom",
+            "name": "Nightmares related to the trauma"
+          },
+          {
+            "@type": "MedicalSignOrSymptom",
+            "name": "Avoidance of trauma reminders"
+          },
+          {
+            "@type": "MedicalSignOrSymptom",
+            "name": "Negative changes in mood and cognition"
+          },
+          {
+            "@type": "MedicalSignOrSymptom",
+            "name": "Hyperarousal and hypervigilance"
+          }
+        ],
+        "possibleTreatment": [
+          {
+            "@type": "MedicalTherapy",
+            "name": "EMDR (Eye Movement Desensitization and Reprocessing)"
+          },
+          {
+            "@type": "MedicalTherapy",
+            "name": "Cognitive Processing Therapy (CPT)"
+          },
+          {
+            "@type": "MedicalTherapy",
+            "name": "Prolonged Exposure Therapy (PE)"
+          },
+          {
+            "@type": "MedicalTherapy",
+            "name": "Sertraline (Zoloft) — SSRI"
+          },
+          {
+            "@type": "MedicalTherapy",
+            "name": "Paroxetine (Paxil) — SSRI"
+          }
+        ],
+        "epidemiology": "Approximately 6% of the U.S. population will have PTSD at some point in their lives. About 12 million adults have PTSD during any given year.",
+        "riskFactor": [
+          "Experiencing or witnessing traumatic events",
+          "History of childhood trauma or abuse",
+          "Military combat exposure",
+          "Sexual assault or violence",
+          "Lack of social support after trauma"
+        ]
+      },
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [
+          "h1",
+          ".stat-number",
+          ".hero-subtitle"
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://ptsd.md/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is PTSD?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "PTSD (Post-Traumatic Stress Disorder) is a psychiatric condition that can develop after experiencing or witnessing a traumatic event such as combat, sexual assault, accidents, natural disasters, or other life-threatening situations. It is characterized by four main symptom clusters: intrusive memories (flashbacks, nightmares), avoidance behaviors, negative changes in thoughts and mood, and changes in arousal and reactivity (hypervigilance, being easily startled). PTSD is diagnosed when symptoms persist for more than one month and cause significant distress or functional impairment."
           }
         },
         {
-          "@type": "FAQPage",
-          "@id": "https://ptsd.md/#faq",
-          "mainEntity": [
-            {
-              "@type": "Question",
-              "name": "What is PTSD?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "PTSD (Post-Traumatic Stress Disorder) is a psychiatric condition that can develop after experiencing or witnessing a traumatic event such as combat, sexual assault, accidents, natural disasters, or other life-threatening situations. It is characterized by four main symptom clusters: intrusive memories (flashbacks, nightmares), avoidance behaviors, negative changes in thoughts and mood, and changes in arousal and reactivity (hypervigilance, being easily startled). PTSD is diagnosed when symptoms persist for more than one month and cause significant distress or functional impairment."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "How is PTSD treated?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "PTSD is treatable with evidence-based therapies. The most effective treatments are trauma-focused psychotherapies: Cognitive Processing Therapy (CPT), which helps change unhelpful beliefs related to trauma; Prolonged Exposure (PE), which involves gradually facing trauma-related memories and situations; and EMDR (Eye Movement Desensitization and Reprocessing), which uses bilateral stimulation while processing traumatic memories. Medications like sertraline (Zoloft) and paroxetine (Paxil) are FDA-approved for PTSD and can help reduce symptoms. Many people use a combination of therapy and medication."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "How long does PTSD treatment take?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Evidence-based treatments for PTSD typically show significant improvement within 8-16 sessions (2-4 months) of weekly therapy. CPT is usually delivered in 12 sessions, PE in 8-15 sessions, and EMDR in 6-12 sessions. However, treatment duration varies based on individual factors including trauma complexity, co-occurring conditions, and personal response to treatment. Some people experience relief within weeks, while others with complex trauma may need longer treatment. The good news is that most people who complete trauma-focused therapy experience significant symptom reduction."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Can PTSD be cured?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Many people with PTSD experience significant recovery and no longer meet diagnostic criteria after completing evidence-based treatment. Studies show that 53-80% of people who complete trauma-focused therapy like CPT, PE, or EMDR no longer have PTSD by the end of treatment. However, 'cure' is a complex term in mental health. Some people may still experience occasional symptoms during stressful times but can manage them effectively. Recovery is absolutely possible, and many people go on to live full, meaningful lives after PTSD treatment."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "What is the difference between PTSD and normal stress reactions?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "It's normal to experience distress after a traumatic event. Most people have some stress symptoms in the first weeks after trauma—this is a normal response. PTSD is diagnosed when these symptoms persist beyond one month, cause significant distress, and interfere with daily functioning. Key differences: PTSD symptoms don't fade with time without treatment, they often worsen or stay the same. PTSD involves re-experiencing the trauma (flashbacks, nightmares) as if it's happening now, significant avoidance that limits your life, and persistent changes in how you think, feel, and react. If symptoms persist beyond a few weeks, seeking professional evaluation is important."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Who is at risk for developing PTSD?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Anyone who experiences or witnesses a traumatic event can develop PTSD. Risk factors include: experiencing severe or life-threatening trauma; having a history of childhood trauma or abuse; having pre-existing mental health conditions like anxiety or depression; lacking social support after trauma; experiencing ongoing stress after the event; having a family history of mental illness. Some groups have higher rates: combat veterans (11-20%), sexual assault survivors (up to 50% of women), accident and disaster survivors. However, most people who experience trauma do not develop PTSD—about 6-8% of the population will have PTSD at some point."
-              }
-            }
-          ]
+          "@type": "Question",
+          "name": "How is PTSD treated?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "PTSD is treatable with evidence-based therapies. The most effective treatments are trauma-focused psychotherapies: Cognitive Processing Therapy (CPT), which helps change unhelpful beliefs related to trauma; Prolonged Exposure (PE), which involves gradually facing trauma-related memories and situations; and EMDR (Eye Movement Desensitization and Reprocessing), which uses bilateral stimulation while processing traumatic memories. Medications like sertraline (Zoloft) and paroxetine (Paxil) are FDA-approved for PTSD and can help reduce symptoms. Many people use a combination of therapy and medication."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does PTSD treatment take?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Evidence-based treatments for PTSD typically show significant improvement within 8-16 sessions (2-4 months) of weekly therapy. CPT is usually delivered in 12 sessions, PE in 8-15 sessions, and EMDR in 6-12 sessions. However, treatment duration varies based on individual factors including trauma complexity, co-occurring conditions, and personal response to treatment. Some people experience relief within weeks, while others with complex trauma may need longer treatment. The good news is that most people who complete trauma-focused therapy experience significant symptom reduction."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can PTSD be cured?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Many people with PTSD experience significant recovery and no longer meet diagnostic criteria after completing evidence-based treatment. Studies show that 53-80% of people who complete trauma-focused therapy like CPT, PE, or EMDR no longer have PTSD by the end of treatment. However, 'cure' is a complex term in mental health. Some people may still experience occasional symptoms during stressful times but can manage them effectively. Recovery is absolutely possible, and many people go on to live full, meaningful lives after PTSD treatment."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the difference between PTSD and normal stress reactions?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It's normal to experience distress after a traumatic event. Most people have some stress symptoms in the first weeks after trauma—this is a normal response. PTSD is diagnosed when these symptoms persist beyond one month, cause significant distress, and interfere with daily functioning. Key differences: PTSD symptoms don't fade with time without treatment, they often worsen or stay the same. PTSD involves re-experiencing the trauma (flashbacks, nightmares) as if it's happening now, significant avoidance that limits your life, and persistent changes in how you think, feel, and react. If symptoms persist beyond a few weeks, seeking professional evaluation is important."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who is at risk for developing PTSD?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Anyone who experiences or witnesses a traumatic event can develop PTSD. Risk factors include: experiencing severe or life-threatening trauma; having a history of childhood trauma or abuse; having pre-existing mental health conditions like anxiety or depression; lacking social support after trauma; experiencing ongoing stress after the event; having a family history of mental illness. Some groups have higher rates: combat veterans (11-20%), sexual assault survivors (up to 50% of women), accident and disaster survivors. However, most people who experience trauma do not develop PTSD—about 6-8% of the population will have PTSD at some point."
+          }
         }
       ]
     }
+  ]
+}
     </script>
     
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext x='16' y='24' font-family='-apple-system,system-ui,sans-serif' font-weight='800' font-size='16' fill='%230d9488' text-anchor='middle' letter-spacing='-0.5'%3E.md%3C/text%3E%3C/svg%3E">
@@ -1314,6 +1362,28 @@
                 <li>What does treatment look like, and how long does it typically take?</li>
                 <li>Do you accept my insurance or offer sliding-scale fees?</li>
             </ul>
+        </section>
+        <section class="section" id="faq">
+            <div class="section-label" style="font-size: 12px; font-weight: 600; color: var(--accent, #0d9488); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 12px;">FAQ</div>
+            <h2>Frequently asked questions</h2>
+            <div style="margin-top: 20px;">
+                <div style="border-bottom: 1px solid var(--border, #e2e8f0); padding: 20px 0;">
+                    <h3 style="font-size: 17px; font-weight: 600; margin-bottom: 8px; font-family: var(--font-display, Georgia, serif);">How is PTSD treated?</h3>
+                    <p style="font-size: 16px; color: var(--text-secondary, #475569); margin: 0;">PTSD is treatable with evidence-based therapies. The most effective treatments are trauma-focused psychotherapies: Cognitive Processing Therapy (CPT), which helps change unhelpful beliefs related to trauma; Prolonged Exposure (PE), which involves gradually facing trauma-related memories and situations; and EMDR (Eye Movement Desensitization and Reprocessing), which uses bilateral stimulation while processing traumatic memories. Medications like sertraline (Zoloft) and paroxetine (Paxil) are FDA-approved for PTSD and can help reduce symptoms. Many people use a combination of therapy and medication.</p>
+                </div>
+                <div style="border-bottom: 1px solid var(--border, #e2e8f0); padding: 20px 0;">
+                    <h3 style="font-size: 17px; font-weight: 600; margin-bottom: 8px; font-family: var(--font-display, Georgia, serif);">Can PTSD be cured?</h3>
+                    <p style="font-size: 16px; color: var(--text-secondary, #475569); margin: 0;">Many people with PTSD experience significant recovery and no longer meet diagnostic criteria after completing evidence-based treatment. Studies show that 53-80% of people who complete trauma-focused therapy like CPT, PE, or EMDR no longer have PTSD by the end of treatment. However, &#x27;cure&#x27; is a complex term in mental health. Some people may still experience occasional symptoms during stressful times but can manage them effectively. Recovery is absolutely possible, and many people go on to live full, meaningful lives after PTSD treatment.</p>
+                </div>
+                <div style="border-bottom: 1px solid var(--border, #e2e8f0); padding: 20px 0;">
+                    <h3 style="font-size: 17px; font-weight: 600; margin-bottom: 8px; font-family: var(--font-display, Georgia, serif);">What is the difference between PTSD and normal stress reactions?</h3>
+                    <p style="font-size: 16px; color: var(--text-secondary, #475569); margin: 0;">It&#x27;s normal to experience distress after a traumatic event. Most people have some stress symptoms in the first weeks after trauma—this is a normal response. PTSD is diagnosed when these symptoms persist beyond one month, cause significant distress, and interfere with daily functioning. Key differences: PTSD symptoms don&#x27;t fade with time without treatment, they often worsen or stay the same. PTSD involves re-experiencing the trauma (flashbacks, nightmares) as if it&#x27;s happening now, significant avoidance that limits your life, and persistent changes in how you think, feel, and react. If symptoms persist beyond a few weeks, seeking professional evaluation is important.</p>
+                </div>
+                <div style="border-bottom: 1px solid var(--border, #e2e8f0); padding: 20px 0;">
+                    <h3 style="font-size: 17px; font-weight: 600; margin-bottom: 8px; font-family: var(--font-display, Georgia, serif);">Who is at risk for developing PTSD?</h3>
+                    <p style="font-size: 16px; color: var(--text-secondary, #475569); margin: 0;">Anyone who experiences or witnesses a traumatic event can develop PTSD. Risk factors include: experiencing severe or life-threatening trauma; having a history of childhood trauma or abuse; having pre-existing mental health conditions like anxiety or depression; lacking social support after trauma; experiencing ongoing stress after the event; having a family history of mental illness. Some groups have higher rates: combat veterans (11-20%), sexual assault survivors (up to 50% of women), accident and disaster survivors. However, most people who experience trauma do not develop PTSD—about 6-8% of the population will have PTSD at some point.</p>
+                </div>
+            </div>
         </section>
 
         <section class="section" id="related">
